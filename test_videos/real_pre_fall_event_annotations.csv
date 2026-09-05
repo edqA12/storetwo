@@ -1,0 +1,18 @@
+clip_id,event_id,event_type,start_s,end_s,annotation_source,annotation_confidence,notes
+caucafall-sitdown-s1,caucafall-s1-sit-01,SIT_DOWN,0.000,5.737,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s2,caucafall-s2-sit-01,SIT_DOWN,0.000,3.070,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s3,caucafall-s3-sit-01,SIT_DOWN,1.987,5.612,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s4,caucafall-s4-sit-01,SIT_DOWN,2.799,5.987,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s5,caucafall-s5-sit-01,SIT_DOWN,2.299,6.883,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s6,caucafall-s6-sit-01,SIT_DOWN,2.424,5.362,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s7,caucafall-s7-sit-01,SIT_DOWN,0.799,4.070,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s8,caucafall-s8-sit-01,SIT_DOWN,0.000,4.966,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s9,caucafall-s9-sit-01,SIT_DOWN,0.862,4.716,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s10,caucafall-s10-sit-01,SIT_DOWN,1.540,4.862,OmniFall labels/caucafall.csv,official,OmniFall class 3 sit_down
+caucafall-sitdown-s2,caucafall-s2-sts-01,SIT_TO_STAND,4.799,5.600,OmniFall labels/caucafall.csv,official,OmniFall class 7 stand_up
+caucafall-sitdown-s5,caucafall-s5-sts-01,SIT_TO_STAND,11.466,12.986,OmniFall labels/caucafall.csv,official,OmniFall class 7 stand_up
+caucafall-sitdown-s6,caucafall-s6-sts-01,SIT_TO_STAND,8.508,9.450,OmniFall labels/caucafall.csv,official,OmniFall class 7 stand_up
+caucafall-sitdown-s7,caucafall-s7-sts-01,SIT_TO_STAND,8.195,9.635,OmniFall labels/caucafall.csv,official,OmniFall class 7 stand_up
+caucafall-sitdown-s9,caucafall-s9-sts-01,SIT_TO_STAND,11.362,11.900,OmniFall labels/caucafall.csv,official,OmniFall class 7 stand_up
+caucafall-sitdown-s10,caucafall-s10-sts-01,SIT_TO_STAND,9.549,10.987,OmniFall labels/caucafall.csv,official,OmniFall class 7 stand_up
+sisfall-d18-stumble,sisfall-d18-near-fall-01,NEAR_FALL,10.050,10.800,SisFall D18 official activity + local frame-level review,manual_frame_verified,首次可见失衡纠正动作至恢复稳定步态

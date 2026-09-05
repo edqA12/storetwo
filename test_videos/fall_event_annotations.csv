@@ -1,0 +1,7 @@
+clip_id,event_id,event_type,start_s,end_s,start_frame,end_frame,fps,annotation_source,annotation_confidence,notes
+urfd-fall-01,urfd-fall-01-event-01,FALL,2.733,3.733,83,113,30,URFD urfall-cam0-falls.csv,official_frame_labels,首次label0至首次label1；t=(frame-1)/30
+urfd-fall-02,urfd-fall-02-event-01,FALL,1.300,2.300,40,70,30,URFD urfall-cam0-falls.csv,official_frame_labels,首次label0至首次label1；t=(frame-1)/30
+urfd-fall-03,urfd-fall-03-event-01,FALL,4.900,5.900,148,178,30,URFD urfall-cam0-falls.csv,official_frame_labels,首次label0至首次label1；t=(frame-1)/30
+urfd-fall-04,urfd-fall-04-event-01,FALL,0.433,1.433,14,44,30,URFD urfall-cam0-falls.csv,official_frame_labels,首次label0至首次label1；t=(frame-1)/30
+urfd-fall-05,urfd-fall-05-event-01,FALL,2.600,3.600,79,109,30,URFD urfall-cam0-falls.csv,official_frame_labels,首次label0至首次label1；t=(frame-1)/30
+urfd-fall-06,urfd-fall-06-event-01,FALL,0.333,1.333,11,41,30,URFD urfall-cam0-falls.csv,official_frame_labels,首次label0至首次label1；t=(frame-1)/30

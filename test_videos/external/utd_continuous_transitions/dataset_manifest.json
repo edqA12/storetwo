@@ -1,0 +1,15 @@
+{
+  "dataset_name": "UTD Continuous Transition Movements Dataset",
+  "official_page": "https://personal.utdallas.edu/~kehtar/UTD-Dataset-ContinuousTransitionMovements.htm",
+  "download_url": "https://personal.utdallas.edu/~kehtar/ContinuousTransitionMovementsDataset.zip",
+  "accessed_on": "2026-09-01",
+  "archive_filename": "ContinuousTransitionMovementsDataset.zip",
+  "archive_size_bytes": 169830370,
+  "subjects": 5,
+  "trials_per_subject": 5,
+  "modalities": ["Kinect_v2_depth", "inertial", "depth_to_inertial_index"],
+  "declared_actions_include": ["sit_to_stand", "fall"],
+  "per_action_temporal_labels_in_download": false,
+  "license_note": "官方页面未声明标准开源许可证；数据仅保留在本机用于科研验收，重新分发前须向数据提供方确认。",
+  "acceptance_scope": "原始深度读取、质量判定、距离变化特征和前置融合链路；不用于声称近跌倒或起身识别准确率。"
+}

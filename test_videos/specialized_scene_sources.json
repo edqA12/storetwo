@@ -1,0 +1,37 @@
+{
+  "generated_on": "2026-09-02",
+  "sources": [
+    {
+      "dataset": "URFD",
+      "role": "模拟跌倒正样本、ADL困难负样本与官方逐帧姿态标签",
+      "landing_page": "https://fenix.ur.edu.pl/~mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0, non-commercial academic use",
+      "local_fall_videos": 6,
+      "local_adl_videos": 6,
+      "frame_label_file": "test_videos/external/urfd/urfall-cam0-falls.csv",
+      "frame_label_sha256": "4ed29af7040098ba0150d1030eeadd97bbfde5c3a4fb9b07df786d673e22a65c",
+      "adl_feature_file": "test_videos/external/urfd/urfall-cam0-adls.csv",
+      "adl_feature_sha256": "e19b2d8379538c16892241aa4cdc9e26a53b296473229c568331c23d7b3cdad1"
+    },
+    {
+      "dataset": "CAUCAFall + OmniFall",
+      "role": "坐下/起身场景与逐事件时间段",
+      "landing_page": "https://data.mendeley.com/datasets/7w7fccy7ky/4",
+      "license": "CC BY 4.0",
+      "local_videos": 10
+    },
+    {
+      "dataset": "SisFall",
+      "role": "慢走、快走、行走中绊踉和跳跃场景",
+      "landing_page": "https://www.mdpi.com/1424-8220/17/1/198",
+      "license": "CC BY 4.0",
+      "local_videos": 4
+    }
+  ],
+  "local_totals": {
+    "videos": 26,
+    "fall_positive_videos": 6,
+    "near_fall_positive_videos": 1,
+    "event_annotations": 23
+  }
+}

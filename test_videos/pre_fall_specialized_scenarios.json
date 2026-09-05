@@ -1,0 +1,65 @@
+{
+  "dataset_name": "暮安智护近跌倒与起身工程专项场景集",
+  "dataset_type": "synthetic_feature_trajectories",
+  "medical_accuracy_claim_allowed": false,
+  "scenarios": [
+    {
+      "id": "near_fall_recovery",
+      "category": "near_fall",
+      "expected_near_falls": 1,
+      "expected_sit_to_stand": null,
+      "frames": [
+        {"t": 0.0, "state": "NORMAL", "x": 0.50, "angle": 5, "down": 0, "rotation": 0},
+        {"t": 0.3, "state": "DESCENDING", "x": 0.62, "angle": 32, "down": 0.24, "rotation": 52},
+        {"t": 0.8, "state": "NORMAL", "x": 0.51, "angle": 6, "down": 0, "rotation": 0}
+      ]
+    },
+    {
+      "id": "near_fall_develops_to_fall",
+      "category": "fall_exclusion",
+      "expected_near_falls": 0,
+      "expected_sit_to_stand": null,
+      "frames": [
+        {"t": 0.0, "state": "DESCENDING", "x": 0.50, "angle": 30, "down": 0.25, "rotation": 55},
+        {"t": 0.4, "state": "SUSPECT", "x": 0.62, "angle": 72, "down": 0.10, "rotation": 20, "lying": 0.85},
+        {"t": 0.9, "state": "NORMAL", "x": 0.50, "angle": 5, "down": 0, "rotation": 0}
+      ]
+    },
+    {
+      "id": "normal_bend",
+      "category": "normal_exclusion",
+      "expected_near_falls": 0,
+      "expected_sit_to_stand": null,
+      "frames": [
+        {"t": 0.0, "state": "NORMAL", "x": 0.50, "angle": 5, "down": 0, "rotation": 0},
+        {"t": 0.3, "state": "DESCENDING", "x": 0.50, "angle": 42, "down": 0.02, "rotation": 48},
+        {"t": 0.8, "state": "NORMAL", "x": 0.50, "angle": 5, "down": 0, "rotation": 0}
+      ]
+    },
+    {
+      "id": "sit_to_stand_success",
+      "category": "sit_to_stand",
+      "expected_near_falls": 0,
+      "expected_sit_to_stand": "success",
+      "frames": [
+        {"t": 0.0, "state": "NORMAL", "knee": 105},
+        {"t": 0.5, "state": "NORMAL", "knee": 105},
+        {"t": 0.8, "state": "NORMAL", "knee": 140, "down": -0.08},
+        {"t": 1.2, "state": "NORMAL", "knee": 160, "down": -0.04},
+        {"t": 1.6, "state": "NORMAL", "knee": 165}
+      ]
+    },
+    {
+      "id": "sit_to_stand_failure",
+      "category": "sit_to_stand",
+      "expected_near_falls": 0,
+      "expected_sit_to_stand": "failure",
+      "frames": [
+        {"t": 0.0, "state": "NORMAL", "knee": 100},
+        {"t": 0.5, "state": "NORMAL", "knee": 100},
+        {"t": 0.8, "state": "NORMAL", "knee": 138, "down": -0.06},
+        {"t": 1.2, "state": "NORMAL", "knee": 105}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "generated_on": "2026-09-01",
+  "accepted_sources": [
+    {
+      "dataset": "CAUCAFall",
+      "role": "真实人体坐下/起身 RGB 视频",
+      "landing_page": "https://data.mendeley.com/datasets/7w7fccy7ky/4",
+      "license": "CC BY 4.0",
+      "local_files": 10,
+      "local_bytes": 15775616
+    },
+    {
+      "dataset": "OmniFall",
+      "role": "CAUCAFall 统一逐事件时间段标注",
+      "landing_page": "https://huggingface.co/datasets/simplexsigil2/omnifall",
+      "label_file": "labels/caucafall.csv",
+      "local_sha256": "7283def2b2aa80f4b6004ce59262114ef9e4dca22601f8f0afa37983d1286c9e"
+    },
+    {
+      "dataset": "SisFall",
+      "role": "真实人体模拟近跌倒正样本及同源日常活动负样本",
+      "landing_page": "https://www.mdpi.com/1424-8220/17/1/198",
+      "official_video_page": "https://sistemic.udea.edu.co/en/investigacion/proyectos/english-falls/",
+      "license": "CC BY 4.0",
+      "activities": ["D01 Walking slowly", "D02 Walking quickly", "D18 Stumble while walking", "D19 Gently jump"],
+      "local_files": 4,
+      "annotation_note": "活动类别为官方定义；D18 事件起止由本项目逐帧复核"
+    }
+  ],
+  "near_fall_sources_checked": [
+    {
+      "dataset": "TsetFall",
+      "target_sequences": [23, 24, 35],
+      "status": "WAITING_FOR_DECODING_KEY",
+      "reason": "下载内容需要先填写发布方 Google Form 获取解码密钥。",
+      "landing_page": "https://github.com/ppgia-unifor/TsetFall_dataset"
+    },
+    {
+      "dataset": "SAFER-Activities",
+      "status": "WAITING_FOR_ACCOUNT_APPROVAL",
+      "reason": "Hugging Face 数据页要求登录、接受条款并向发布方共享联系信息。",
+      "landing_page": "https://huggingface.co/datasets/SAFER-Activities/SAFER-Activities"
+    },
+    {
+      "dataset": "UNIVRFall",
+      "status": "REJECTED_FOR_VISION_EVALUATION",
+      "reason": "公开包提供 IMU 与 Excel 标注，未提供同步 RGB 视频。",
+      "landing_page": "https://zenodo.org/records/18346755"
+    },
+    {
+      "dataset": "Real-world trips in older adults supplementary videos",
+      "status": "REJECTED_FOR_VISION_EVALUATION",
+      "reason": "附件是根据 IMU 重建的三维动画，不是可供人体姿态模型推理的现场 RGB 视频。",
+      "landing_page": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7492551/"
+    }
+  ],
+  "integrity": [
+    {"file": "SitDownS1.avi", "bytes": 1295642, "sha256": "d76e3235b539f61e7e5774d1bfd4324186281bac6d4b894c722869ab3b40b574"},
+    {"file": "SitDownS2.avi", "bytes": 922116, "sha256": "e5cb284651fddc54c844116cacad043a769f965932d5e2eb2f98e8cfba1ef310"},
+    {"file": "SitDownS3.avi", "bytes": 2127766, "sha256": "8f1ef95774f6df9acfe2074eeea4e2aa395b65142628f31c84e456127714fcbb"},
+    {"file": "SitDownS4.avi", "bytes": 1782556, "sha256": "33fff11f0b7a652265c94d3ba440215fc68fe24af05e296aba9ebeab6d593941"},
+    {"file": "SitDownS5.avi", "bytes": 1977642, "sha256": "150230d34b5e3822eab4350e14e404f7736a894c16840138e41255fb16b4f21a"},
+    {"file": "SitDownS6.avi", "bytes": 633078, "sha256": "bba4fc0196747a66e6b540b4baafaf870a7951d90f1146752982470189e84acc"},
+    {"file": "SitDownS7.avi", "bytes": 1513468, "sha256": "dcaab5988cd5b5ff4cafaa7b9bd2fdb5331687c23eb0673803f4df92c1efcd0b"},
+    {"file": "SitDownS8.avi", "bytes": 594834, "sha256": "6ee18eec4616fb37daf886f8426804b30520c53e6f8ae22d11c452d5743a4a82"},
+    {"file": "SitDownS9.avi", "bytes": 2009704, "sha256": "8e096744e202f837cd1c1f02b52068d5816e5ec81822eea1b68bbe8653f10069"},
+    {"file": "SitDownS10.avi", "bytes": 1920924, "sha256": "7b50d78ea70228e6dd123a467b8d77a38b691c7b8516123ddfce5353d2cb9f32"},
+    {"file": "SisFall_D01_walk_slow.mp4", "bytes": 5045699, "sha256": "6c11d00897520c7ab20e4a112248ba340f89427615cbf42b66090af82a915e47"},
+    {"file": "SisFall_D02_walk_fast.mp4", "bytes": 5634035, "sha256": "c51e7ec6fef311a9a20a11c2aba77faf9309b11b53053184817693a744317c90"},
+    {"file": "SisFall_D18_stumble.mp4", "bytes": 2643810, "sha256": "8cad9a5c31f850e69c21a64fb2b99e72450780457a8931dfcc535690120310cf"},
+    {"file": "SisFall_D19_jump.mp4", "bytes": 3050962, "sha256": "fb5a0edbe9ea0c389cc299e817c7ffa7893965103c028a938b86b137ac0b38e5"}
+  ]
+}

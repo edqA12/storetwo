@@ -1,0 +1,4 @@
+sample_id,path,ground_truth,duration_s,event_time_s,depth_degraded,rgb_only_prediction,rgb_only_detection_time_s,depth_only_prediction,depth_only_detection_time_s,rgb_depth_prediction,rgb_depth_detection_time_s,rgb_depth_baseline_prediction,rgb_depth_baseline_detection_time_s
+replace-normal,replace_with_normal_video.mp4,NORMAL,10,,,,,,,,,,
+replace-near-fall,replace_with_near_fall_video.mp4,NEAR_FALL,10,4.0,,,,,,,,,
+replace-fall,replace_with_fall_video.mp4,FALL,10,4.0,,,,,,,,,

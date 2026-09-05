@@ -1,0 +1,45 @@
+model:
+  path: models/yolo11n-pose.pt
+  download_name: yolo11n-pose.pt
+  device: cpu
+  image_size: 512
+  confidence: 0.30
+  keypoint_confidence: 0.25
+
+detection:
+  history_seconds: 1.6
+  missing_tolerance_s: 0.8
+  tracker_iou_threshold: 0.25
+  tracker_center_threshold: 0.45
+  lying_enter_angle_deg: 60.0
+  lying_exit_angle_deg: 40.0
+  lying_enter_score: 0.70
+  lying_exit_score: 0.40
+  fast_down_velocity: 0.20
+  fast_angle_velocity: 48.0
+  descent_timeout_s: 2.2
+  lying_hold_s: 0.6
+  unexplained_lying_s: 2.0
+  suspected_fall_hold_s: 3.0
+  suspected_fall_min_quality: 0.55
+  recovery_upright_s: 1.0
+  event_cooldown_s: 9.0
+  stale_derivative_s: 1.0
+
+video:
+  max_file_mb: 300
+  max_duration_s: 600
+  fallback_fps: 25.0
+  default_frame_stride: 1
+
+storage:
+  database: data/events.db
+  uploads_dir: data/uploads
+  results_dir: data/results
+  snapshots_dir: data/snapshots
+  exports_dir: data/exports
+
+server:
+  host: 127.0.0.1
+  port: 7860
+  open_browser: true

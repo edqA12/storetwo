@@ -1,0 +1,10 @@
+gradio==6.20.0
+ultralytics>=8.3.0,<9
+opencv-python>=4.10,<5
+numpy>=2.0,<3
+plotly>=6.0,<7
+PyYAML>=6.0,<7
+Pillow>=11.0,<13
+imageio-ffmpeg>=0.6,<1
+pytest>=8.0,<10
+h5py>=3.12,<4
