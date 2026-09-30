@@ -1,0 +1,5 @@
+# 只在本机填写，不要将填写后的文件分享或提交到版本库。
+# 保存后下一次发送即可生效，无需重启。
+# 环境变量 DEEPSEEK_API_KEY 优先于此处。
+api_key: "sk-f00728a098a24c48aad6adb9886c460c"
+model: "deepseek-v4-flash"

@@ -124,6 +124,7 @@ class VisionPipeline:
         sit_to_stand_events: list[dict[str, Any]] = []
         sit_to_stand_attempts: list[dict[str, Any]] = []
         feature_quality_by_track: dict[int, float] = {}
+        state['profile_update_tracks'] = []
         for pose in poses:
             track_state = state["tracks"][str(pose.track_id)]
             features = extract_pose_features(
@@ -144,7 +145,9 @@ class VisionPipeline:
             )
             decisions.append(decision)
             feature_quality_by_track[pose.track_id] = float(features.quality)
-            if self.config.pre_fall.enabled:
+            if (self.config.pre_fall.enabled and features.valid
+                    and features.quality >= self.config.pre_fall.min_rgb_quality
+                    and (not state.get('require_single_person_profile') or len(poses) == 1)):
                 pre_fall_state = track_state.setdefault("pre_fall", {})
                 if not pre_fall_state.get("profile_loaded"):
                     profile = None
@@ -171,19 +174,7 @@ class VisionPipeline:
                 near_fall_events.extend(detected_near_falls)
                 sit_to_stand_events.extend(pre_fall_state.get("new_sit_to_stand_events", []))
                 sit_to_stand_attempts.extend(pre_fall_state.get("new_sit_to_stand_attempts", []))
-                last_profile_save = float(pre_fall_state.get("last_profile_save_ts", -1e12))
-                if (
-                    self.profile_repository is not None
-                    and state.get("profile_persistence_enabled", True)
-                    and pre_fall_state.get("profile_dirty")
-                    and timestamp_s - last_profile_save >= self.config.pre_fall.profile_save_interval_s
-                ):
-                    self.profile_repository.upsert_personal_baseline(
-                        self.config.pre_fall.person_id,
-                        self.pre_fall_analyzer.export_persistent_profile(pre_fall_state),
-                    )
-                    pre_fall_state["profile_dirty"] = False
-                    pre_fall_state["last_profile_save_ts"] = float(timestamp_s)
+                state['profile_update_tracks'].append(str(pose.track_id))
             track_state["last_pose"] = {
                 "bbox": list(pose.bbox_xyxy),
                 "keypoints": pose.keypoints_xy.tolist(),
@@ -210,7 +201,7 @@ class VisionPipeline:
                 "label": decision.label,
                 "risk": decision.risk,
             }
-            if pre_fall_results:
+            if pre_fall_results and pre_fall_results[-1].track_id == pose.track_id:
                 track_state["last_pre_fall"] = pre_fall_results[-1]
             if decision.event_started:
                 new_events.append({
@@ -306,7 +297,23 @@ class VisionPipeline:
             sit_to_stand_events=sit_to_stand_events,
             sit_to_stand_attempts=sit_to_stand_attempts,
         )
+        if not state.get('defer_profile_save'):
+            self.commit_profiles(state, timestamp_s)
         return result, state
+
+    def commit_profiles(self, state: dict[str, Any], timestamp_s: float) -> None:
+        """Commit only accepted-frame updates; live callers invoke after freshness checks."""
+        if self.profile_repository is None or not state.get('profile_persistence_enabled', True):
+            return
+        for key in state.get('profile_update_tracks', []):
+            profile = state['tracks'][key].get('pre_fall', {})
+            if (profile.get('profile_dirty') and timestamp_s - float(profile.get('last_profile_save_ts', -1e12))
+                    >= self.config.pre_fall.profile_save_interval_s):
+                self.profile_repository.upsert_personal_baseline(
+                    self.config.pre_fall.person_id, self.pre_fall_analyzer.export_persistent_profile(profile))
+                profile['profile_dirty'] = False
+                profile['last_profile_save_ts'] = float(timestamp_s)
+        state['profile_update_tracks'] = []
 
     def render_cached(self, frame_bgr: np.ndarray, stream_state: dict[str, Any]) -> np.ndarray:
         poses: list[PersonPose] = []

@@ -92,22 +92,30 @@ class MultimodalPipeline:
     def process_rgb_depth(
         self,
         rgb_frame: np.ndarray,
-        depth_frame: np.ndarray,
+        depth_frame: np.ndarray | None,
         timestamp_s: float,
         stream_state: dict[str, Any] | None,
         confidence: float | None = None,
+        *,
+        depth_unit_m: float | None = None,
+        depth_unavailable_reason: str = '深度不可用',
+        depth_timestamp_s: float | None = None,
+        compose_depth: bool = True,
     ) -> tuple[FrameResult, dict[str, Any]]:
         """Process synchronized RGB plus raw or visualized depth frames."""
         if rgb_frame is None or rgb_frame.ndim != 3 or rgb_frame.shape[2] < 3:
             raise ValueError("RGB画面格式不正确。")
-        if depth_frame is None or depth_frame.ndim not in {2, 3}:
+        if depth_frame is not None and depth_frame.ndim not in {2, 3}:
             raise ValueError("深度画面格式不正确。")
         state = dict(stream_state or new_multimodal_state())
-        depth_result, depth_state, depth_rendered = self.depth_pipeline.process_frame(
-            depth_frame,
-            timestamp_s,
-            state.get("depth"),
-        )
+        if depth_frame is None:
+            depth_result = ModalityResult('depth', timestamp_s, 0.0, 0.0, 'UNAVAILABLE',
+                                          '深度不可用', reasons=[depth_unavailable_reason], available=False)
+            depth_state, depth_rendered = {}, None
+        else:
+            depth_result, depth_state, depth_rendered = self.depth_pipeline.process_frame(
+                depth_frame, timestamp_s if depth_timestamp_s is None else depth_timestamp_s,
+                state.get('depth'), depth_unit_m=depth_unit_m)
         if isinstance(self.vision_pipeline, VisionPipeline):
             vision_result, vision_state = self.vision_pipeline.process_frame(
                 rgb_frame,
@@ -188,7 +196,7 @@ class MultimodalPipeline:
             depth_result,
             state.get("last_pre_fall"),
         )
-        annotated = self._compose(depth_rendered, annotated_rgb)
+        annotated = self._compose(depth_rendered, annotated_rgb) if compose_depth and depth_rendered is not None else annotated_rgb
         diagnostics = dict(vision_result.diagnostics)
         diagnostics.update({
             "depth_quality": depth_result.quality,

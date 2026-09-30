@@ -1,0 +1,32 @@
+{
+  "modified": [
+    "app.py",
+    "config.yaml",
+    "README.md",
+    "项目文档索引.md",
+    "AGENTS.md",
+    "Astra人体三维分析说明.md",
+    "Astra实时页面使用说明.md",
+    "系统技术详解.md",
+    "services/astra_live.py",
+    "services/live_records.py",
+    "tests/test_astra_live.py",
+    "tests/test_live_records.py"
+  ],
+  "deleted": [],
+  "original_sha256": {
+    "app.py": "2c95610f91831cefc2ff304b154fcd970ab856f7144c4742ee7b9c44ed6d8761",
+    "config.yaml": "abc7771df16cce3525733f07a7024f5da934b7cb344c864d591482a72f462d8f",
+    "pytest.ini": "8da61242e9127e52798829040f14495b8a8795782af990f6dfe4c918b0178f12",
+    "README.md": "d8b7fdb3c6d3df09eca3b12cf3462b0ee638b9c3bd60e71176969a84b77d9639",
+    "项目文档索引.md": "2970a46894f183c2298468eee65ddfd0c3a9c2100ba27ee7786e8e794fd2cc12",
+    "AGENTS.md": "55ece25bed9492bab4511c988eeb0164da6dd544d3184b89a5d7e5c0dbf3244c",
+    "Astra人体三维分析说明.md": "43238f29f00cfaa78bd2a780b4c4f5b00bec633733dfb2e80e3170bdea5e6380",
+    "Astra实时页面使用说明.md": "bbfe65c3ff45d3cc668cb91bca69211c50f1df623ff834b4e3ce6e24d47708ad",
+    "系统技术详解.md": "4e31449b07637d499ffb0d004a902009fcb217fa998ceebe3ceb4ac270343aee",
+    "services/astra_live.py": "029d435d95ae2f773b1d97e4816bbb6f22607e43e57dcb77e6ba0f2f67286724",
+    "services/live_records.py": "7fcc8950decf3bced5d5093387dddd4d9b11ddface7d918255940f6502118a07",
+    "tests/test_astra_live.py": "34198e1f3e41de4bce5940e9bc04fa2c253959859953cd5800a7531eee020142",
+    "tests/test_live_records.py": "cb82c306ffdbb9a0ff6436ad8fd73c3cb5951286f71e11cfdef217c6d79b4e29"
+  }
+}

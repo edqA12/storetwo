@@ -31,5 +31,5 @@ def test_camera_frame_handler_uses_session_state(monkeypatch):
     frame = __import__("numpy").zeros((48, 64, 3), dtype="uint8")
     output = app_module.process_camera_frame(frame, state, 0.35)
     assert output[0].shape == frame.shape
-    assert output[2] == 0.0
-    assert output[-1]["frame_count"] == 1
+    assert output[2] is None
+    assert output[8]["frame_count"] == 1

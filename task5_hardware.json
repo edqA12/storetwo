@@ -1,0 +1,59 @@
+{
+  "normal": {
+    "counts": {
+      "no_result": 1,
+      "visual_fallback": 1,
+      "person_frames": 27,
+      "quality_weighted_rules": 26
+    },
+    "depth_weight_max": 0.87,
+    "pair_delta_ms_max": 11.077400005888194,
+    "statuses": {
+      "等待数据：本次检测耗时过长，已丢弃过期结果": 1,
+      "人体质量不足 · RGB降级：深度质量不足或正在预热": 1,
+      "人体质量不足 · RGB＋深度融合（软件配对）": 26
+    }
+  },
+  "no_depth": {
+    "counts": {
+      "visual_fallback": 15,
+      "person_frames": 15
+    },
+    "depth_weight_max": 0.0,
+    "pair_delta_ms_max": null,
+    "statuses": {
+      "人体质量不足 · RGB降级：injected": 15
+    }
+  },
+  "no_streams": {
+    "counts": {
+      "no_result": 5
+    },
+    "depth_weight_max": 0,
+    "pair_delta_ms_max": null,
+    "statuses": {
+      "监测中断：采集不可用，请停止后重新开始": 5
+    }
+  },
+  "reconnect": {
+    "counts": {
+      "visual_fallback": 4,
+      "person_frames": 18,
+      "quality_weighted_rules": 14
+    },
+    "depth_weight_max": 0.87,
+    "pair_delta_ms_max": 10.437699995236471,
+    "statuses": {
+      "RGB降级：深度缺失、过期或未满足软件配对容差": 1,
+      "人体质量不足 · RGB降级：深度质量不足或正在预热": 2,
+      "人体质量不足 · RGB＋深度融合（软件配对）": 14,
+      "人体质量不足 · RGB降级：配对数据已过期": 1
+    }
+  },
+  "checks": {
+    "real_depth_fused": true,
+    "injected_depth_loss_falls_back": true,
+    "injected_total_loss_interrupts": true,
+    "reconnect_fuses_again": true
+  }
+}

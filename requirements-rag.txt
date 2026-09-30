@@ -1,0 +1,5 @@
+# Installed separately under vendor/rag; existing detector dependencies are not replaced.
+onnxruntime==1.23.2
+tokenizers==0.22.1
+pypdfium2==4.30.0
+flatbuffers==25.9.23

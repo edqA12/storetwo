@@ -8,3 +8,5 @@ Pillow>=11.0,<13
 imageio-ffmpeg>=0.6,<1
 pytest>=8.0,<10
 h5py>=3.12,<4
+
+httpx>=0.28,<1

@@ -1,0 +1,74 @@
+{
+  "camera_capture/manager.py": {
+    "before": "9b23e678795dac22952dd6444ef4030dd50b5dbc875c2d5ef236c60f1d10b3bc",
+    "after": "6d219695c2c463d44026557f09024276e3cec58ea630067a21cf3729c241fdff"
+  },
+  "camera_capture/processing.py": {
+    "before": "7f98d830caa4246fc48068cb662e95920a9deb9d7ffa6a271cfb07440bdefece",
+    "after": "980dcc24bda71ed0c9e58aa041ead53c730ec684244dda618d90a9199ac889f7"
+  },
+  "core/config.py": {
+    "before": "388971bbb71251ed9346a1db8adc101df448d3e7123892b74490e827312bdb25",
+    "after": "9ca5a50be05193cdfed7bd795c64e42ddb903a5e80e0f63c118bfa2cb2fde4b6"
+  },
+  "core/multimodal.py": {
+    "before": "7d02f8b9847037e0c3a0688875291f56deff88357a269db30757f5b0175ebb95",
+    "after": "d69f70aaaeb5f32ec98d71d2cde9c0de8bb73aac9913e361a8e822405c17c0cc"
+  },
+  "tests/test_astra_capture.py": {
+    "before": "79ca48399a6acc6b4f3e7f049eb55f8340fe8ff4844f4119f010a3daeacad3fc",
+    "after": "dad9cdbc419fb50a68a29966037bb563bf3d014c18a5bd01aabfb24bc502b745"
+  },
+  "app.py": {
+    "before": "681f2059f49b481329e639efdf44fc633c24ced47b67b29fa9519c0d68bc6711",
+    "after": "b73c5b6ad5c6f75f877639a0f553d337328736bfb41dbfe68658a93fc4ecd503"
+  },
+  "config.yaml": {
+    "before": "4e3aa0d3da061d0df01d60dc550f6526e22b45731c50a727a2231343bfb34e56",
+    "after": "47ef3247482df01663457995316469ad8a7654dfe39531db8d4ac3567b0c6453"
+  },
+  "README.md": {
+    "before": "28823d3af3e21f8d13227fa0ab4259fa5c144f96140c92c2793b1ae05e779f73",
+    "after": "79379eb6b7859a999095ae63ccc88caeb0f98a875ca8c84152f433e7d1187dba"
+  },
+  "AGENTS.md": {
+    "before": "a140020497a5fb54342c5498daf17b9578a7ad038207e683675c163603370d38",
+    "after": "cb515d5007f07ec745b71d64a7d464380e013ee267e6d84c6a899b782b3a43ed"
+  },
+  "系统技术详解.md": {
+    "before": "2d4be9fd4d7c4b467e9ddd4d5b8ae1c07d8eb3b7733aacdb94e434b1b085efa2",
+    "after": "39e8006a60058883ccc2fed6e563d1d14f65b8da5e804a17a895c82e29df9880"
+  },
+  "项目文档索引.md": {
+    "before": "b9ed192ba259abb157b35f68c753fd15d07bd35b33dcef7ed586159de80b5c40",
+    "after": "5851761b0e253ca44ba38719412e83900d2a98d5e2051cad5067483cce1afeec"
+  },
+  "assets/navigation.js": {
+    "before": "8e6324ec5c4478fe60dace3aebc71555a1983390fccf94724a82650cc872779e",
+    "after": "ad6c2082a4881f938da797dd6bb0b257fac68ba130feeb3405ffa3c3c7ca6a3a"
+  },
+  "services/astra_live.py": {
+    "before": null,
+    "after": "010e625be51e1091b15d2a855488dc472b38e101656334a21e9777b70072620c"
+  },
+  "tests/test_astra_live.py": {
+    "before": null,
+    "after": "5da4344d0821ac5d070ddc6825ef0c2df46a9c0708e27ca0933701f54dc50f28"
+  },
+  "scripts/check_astra_live.py": {
+    "before": null,
+    "after": "3a773fb5e207a78285615bbda007734b5ed71d72663379b90b95b7d539b3de0a"
+  },
+  "Astra实时监测说明.md": {
+    "before": null,
+    "after": "897815c8f3261984654037d5093e22f8818b3862cc7ff9655abe0f4d1b486d23"
+  },
+  "Astra实时监测验收_20260922.md": {
+    "before": null,
+    "after": "d3452896f71e373c6b7e252476803e4460afe5b5a0491526ef2277a9472672fd"
+  },
+  "astra_live_hardware_result.json": {
+    "before": null,
+    "after": "13e7ae208520a4142a562190b720468cda2b22f33c360f3540ad4b8fc38e8a5b"
+  }
+}

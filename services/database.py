@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import sqlite3
+from .live_records import context_values
 import threading
 from datetime import datetime
 from pathlib import Path
@@ -19,6 +20,10 @@ PREFALL_COLUMNS = [
     "当前运动速度", "个人基线速度", "速度变化", "最近起身耗时", "起身状态", "起身次数",
     "监护对象", "短期风险", "中期风险", "长期风险", "深度空间异常", "深度参与融合",
 ]
+
+
+EVENT_COLUMNS += ["检测设备", "所用模态", "模态质量", "回退原因"]
+PREFALL_COLUMNS += ["检测设备", "所用模态", "模态质量", "回退原因"]
 
 
 class EventRepository:
@@ -220,6 +225,16 @@ class EventRepository:
                 "CREATE INDEX IF NOT EXISTS idx_sit_to_stand_time ON sit_to_stand_events(occurred_at DESC)"
             )
 
+            for table in ('events', 'pre_fall_risk_records', 'near_fall_events', 'sit_to_stand_events'):
+                columns = {row['name'] for row in connection.execute(f'PRAGMA table_info({table})')}
+                if 'capture_context' not in columns:
+                    connection.execute(f"ALTER TABLE {table} ADD COLUMN capture_context TEXT NOT NULL DEFAULT '{{}}'")
+
+    def find_event_by_key(self, event_key: str) -> dict[str, Any] | None:
+        with self._lock, self._connect() as connection:
+            row = connection.execute('SELECT * FROM events WHERE event_key = ?', (event_key,)).fetchone()
+        return dict(row) if row else None
+
     def add_event(self, event: dict[str, Any]) -> int:
         now = datetime.now().astimezone().isoformat(timespec="seconds")
         values = (
@@ -239,15 +254,16 @@ class EventRepository:
             str(event.get("fusion_explanation", "")),
             now,
             now,
+            json.dumps(event.get("capture_context", {}), ensure_ascii=False),
         )
         with self._lock, self._connect() as connection:
-            connection.execute(
+            inserted = connection.execute(
                 """
                 INSERT OR IGNORE INTO events (
                     event_key, occurred_at, source, source_name, event_type, risk,
                     confidence, source_time_s, snapshot_path, reasons, status,
-                    note, fusion_method, fusion_explanation, created_at, updated_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    note, fusion_method, fusion_explanation, created_at, updated_at, capture_context
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 values,
             )
@@ -255,6 +271,8 @@ class EventRepository:
             if row is None:
                 raise RuntimeError("事件写入失败")
             event_id = int(row["id"])
+            if inserted.rowcount == 0:
+                return event_id
             connection.execute(
                 "UPDATE events SET fall_event_score = risk WHERE id = ? AND fall_event_score IS NULL",
                 (event_id,),
@@ -381,6 +399,7 @@ class EventRepository:
             float(record.get("depth_spatial_score", 0.0)),
             1 if record.get("depth_fusion_applied", False) else 0,
             now,
+            json.dumps(record.get("capture_context", {}), ensure_ascii=False),
         )
         with self._lock, self._connect() as connection:
             connection.execute(
@@ -394,8 +413,8 @@ class EventRepository:
                     baseline_speed, speed_change_pct, sit_to_stand_duration_s,
                     sit_to_stand_status, sit_to_stand_count, person_id,
                     short_term_score, medium_term_score, long_term_score,
-                    depth_spatial_score, depth_fusion_applied, created_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    depth_spatial_score, depth_fusion_applied, created_at, capture_context
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 values,
             )
@@ -467,6 +486,7 @@ class EventRepository:
             float(event.get("depth_quality", 0.0)),
             1 if event.get("depth_degraded", True) else 0,
             now,
+            json.dumps(event.get("capture_context", {}), ensure_ascii=False),
         )
         with self._lock, self._connect() as connection:
             connection.execute(
@@ -475,8 +495,8 @@ class EventRepository:
                     event_key, occurred_at, session_id, source, source_name,
                     source_time_s, track_id, status, succeeded, duration_s,
                     max_stability_score, start_knee_angle_deg, max_knee_angle_deg,
-                    sit_to_stand_score, rgb_quality, depth_quality, depth_degraded, created_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    sit_to_stand_score, rgb_quality, depth_quality, depth_degraded, created_at, capture_context
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 values,
             )
@@ -512,6 +532,7 @@ class EventRepository:
             1 if event.get("depth_degraded", True) else 0,
             1 if event.get("developed_into_fall", False) else 0,
             now,
+            json.dumps(event.get("capture_context", {}), ensure_ascii=False),
         )
         with self._lock, self._connect() as connection:
             connection.execute(
@@ -520,8 +541,8 @@ class EventRepository:
                     event_key, occurred_at, session_id, source, source_name,
                     source_time_s, track_id, max_torso_angle, max_down_velocity,
                     lowest_center_y, recovery_time_s, rgb_quality, depth_quality,
-                    depth_degraded, developed_into_fall, created_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    depth_degraded, developed_into_fall, created_at, capture_context
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 values,
             )
@@ -586,7 +607,7 @@ class EventRepository:
                 round(float(item.get("long_term_score", 0.0)), 1),
                 round(float(item.get("depth_spatial_score", 0.0)), 1),
                 "是" if item.get("depth_fusion_applied") else "否",
-            ])
+            ] + context_values(item.get("capture_context")))
         return rows
 
     def table_rows(self, limit: int = 200) -> list[list[Any]]:
@@ -601,7 +622,7 @@ class EventRepository:
                 round(float(event.get("fall_event_score") or event["risk"]), 1),
                 round(float(event["confidence"]), 2),
                 source_time, event["status"], event["reasons"], event.get("fusion_method") or "—",
-            ])
+            ] + context_values(event.get("capture_context")))
         return rows
 
     def statistics(self) -> dict[str, int]:

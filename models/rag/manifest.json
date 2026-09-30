@@ -1,0 +1,14 @@
+{
+  "source": "https://huggingface.co/Xenova/bge-small-zh-v1.5",
+  "pooling": "CLS + L2 normalization",
+  "files": {
+    "model.onnx": "15b717c382bcb518ba457b93ea6850ede7f4f1cd8937454aa06972366cd19bcc",
+    "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+    "config.json": "d4193ead3a810fd694fa8a31d7fc72fbaebc0668b603e398734bf2f6538ff42f"
+  },
+  "download_urls": {
+    "model.onnx": "https://huggingface.co/Xenova/bge-small-zh-v1.5/resolve/main/onnx/model_quantized.onnx",
+    "tokenizer.json": "https://huggingface.co/Xenova/bge-small-zh-v1.5/resolve/main/tokenizer.json",
+    "config.json": "https://huggingface.co/Xenova/bge-small-zh-v1.5/resolve/main/config.json"
+  }
+}

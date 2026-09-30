@@ -1,0 +1,38 @@
+{
+  "edited": [
+    "README.md",
+    "系统技术详解.md",
+    "项目文档索引.md"
+  ],
+  "added": [
+    "Astra Pro使用与技术说明.md",
+    "Astra阶段验收汇编_20260924.md"
+  ],
+  "merged": [
+    "Astra相机采集说明.md",
+    "Astra数据处理说明.md",
+    "Astra实时监测说明.md",
+    "Astra实时页面使用说明.md",
+    "Astra人体三维分析说明.md",
+    "Astra采集模块验收_20260921.md",
+    "Astra数据处理验收_20260921.md",
+    "Astra实时监测验收_20260922.md",
+    "Astra实时页面验收_20260922.md",
+    "Astra人体三维验收_20260923.md"
+  ],
+  "source_sha256": {
+    "Astra相机采集说明.md": "e8101de2a1103863debe5c01b5d10ce41e2366cf507bac792ddd57e2ce61f257",
+    "Astra数据处理说明.md": "dedbcf9ac04665716d276db0b002c5cdbd34e0276dbdfa108b1befb1f2cab75c",
+    "Astra实时监测说明.md": "eb62af2eff795253f7d7ecfabeff3ba6bb08397da8f79dd13a189c86c41bf19b",
+    "Astra实时页面使用说明.md": "92370cffe4ee870b65cd7c6759d0ff71c06edce2fb5c39779e23cdfc672bd330",
+    "Astra人体三维分析说明.md": "bcf41e9f306cca53fca89169ddc6162b347501336442f19dffb27ac756bd1eb1",
+    "Astra采集模块验收_20260921.md": "57f585deb6c7099d45ab4ac282373c1fc33aa5f8050b6ed7322f58e804a24035",
+    "Astra数据处理验收_20260921.md": "cc00e5406f1e61c49b7ddf9ebf9863ee660d179c6b5b482939b53dcf06bad7cd",
+    "Astra实时监测验收_20260922.md": "8e27c94b60447642d951d48ab8a207258366a12e03e161e29494e2d9c817f02a",
+    "Astra实时页面验收_20260922.md": "e42f5e3f0c1d22cbdd76d563b0ea92c3cec4a0ca5df75bf584befe15a082b894",
+    "Astra人体三维验收_20260923.md": "0480348e30daf9182507a9ac43e0a182c5954b64407a79ffcad0407cca569538",
+    "README.md": "d59e5148d96d190e22b5832f66884fb8fb1e7bf45eb58aa466a7880d524392fa",
+    "系统技术详解.md": "bfc723202e8339378119cfbde7dcfa85e38c2c4a6854b9b77de56e892ef7ddbc",
+    "项目文档索引.md": "e69eb4757feb20c9eaebfc4ca3fda698681b509dfb4e9559835b44839bdece8d"
+  }
+}

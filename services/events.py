@@ -25,6 +25,9 @@ class EventService:
         source_name: str = "",
     ) -> int:
         event_key = str(event.get("event_key") or uuid.uuid4().hex)
+        existing = self.repository.find_event_by_key(event_key)
+        if existing is not None:
+            return int(existing["id"])
         snapshot = self.snapshots_dir / f"{event_key}.jpg"
         snapshot_path = ""
         if annotated_bgr is not None and annotated_bgr.size:

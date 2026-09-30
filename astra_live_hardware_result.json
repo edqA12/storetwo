@@ -1,0 +1,59 @@
+{
+  "normal": {
+    "counts": {
+      "no_result": 1,
+      "visual_fallback": 5,
+      "person_frames": 32,
+      "quality_weighted_rules": 27
+    },
+    "depth_weight_max": 0.87,
+    "pair_delta_ms_max": 11.903799997526221,
+    "statuses": {
+      "正在准备监测：本次检测耗时过长，已丢弃过期结果": 1,
+      "RGB降级：深度质量不足或正在预热": 3,
+      "RGB＋深度融合（软件配对）": 27,
+      "RGB降级：深度缺失、过期或未满足软件配对容差": 2
+    }
+  },
+  "no_depth": {
+    "counts": {
+      "visual_fallback": 16,
+      "person_frames": 16
+    },
+    "depth_weight_max": 0.0,
+    "pair_delta_ms_max": null,
+    "statuses": {
+      "RGB降级：深度缺失、过期或未满足软件配对容差": 16
+    }
+  },
+  "no_streams": {
+    "counts": {
+      "no_result": 5
+    },
+    "depth_weight_max": 0,
+    "pair_delta_ms_max": null,
+    "statuses": {
+      "监测中断：采集不可用，请停止后重新开始": 5
+    }
+  },
+  "reconnect": {
+    "counts": {
+      "visual_fallback": 6,
+      "person_frames": 21,
+      "quality_weighted_rules": 15
+    },
+    "depth_weight_max": 0.87,
+    "pair_delta_ms_max": 7.885900005931035,
+    "statuses": {
+      "RGB降级：深度缺失、过期或未满足软件配对容差": 4,
+      "RGB降级：深度质量不足或正在预热": 2,
+      "RGB＋深度融合（软件配对）": 15
+    }
+  },
+  "checks": {
+    "real_depth_fused": true,
+    "injected_depth_loss_falls_back": true,
+    "injected_total_loss_interrupts": true,
+    "reconnect_fuses_again": true
+  }
+}

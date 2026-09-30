@@ -1,0 +1,56 @@
+{
+  "mergedAt": "2026-09-24T15:25:27.4899394+08:00",
+  "formalRoot": "C:\\safe",
+  "originalHashes": {
+    "助手面板优化说明.md": "5b163296ed59458987556ccd6dac885965834f76bd31fb036ca5f122fe3fdcf0",
+    "健康咨询说明.md": "08bba1eab39b8135153717f3086a943946917ad152fe48802f7ab7355fbc9ed0",
+    "界面优化验收记录.md": "b014a1066cea9025ad59df2f8b265eb669e41bfc7d7baab4c137d1d5b5745231",
+    "前端界面优化验收_20260907.md": "44dc5d2f86f132b9ec90f2a3a1982caedfff324caa31627e18d0193ae2597c91",
+    "AI统一入口验收记录.md": "df39587226344b1a14c12120c0f5c75da0b92c3876de7cfca7ecc60683b6f754",
+    "RAG验收记录.md": "602885d31e72e200d142dec427ab9c68414e898bc45010266141e48c316aaa06",
+    "P1实施与验收报告.md": "ff0f0f9c49fc052aeadd5c88b0497d082930796d278f0a7bfd1d58d4c292887b",
+    "README.md": "b35dd73b88bf71c50b4d8bee7a1bd4a0e8a3aacbf5aa7185078079e105a91f41",
+    "系统技术详解.md": "9a6aaa5db3aba544f3403cf0839d456e11c2f6e71687e61ffcddb6fee508e157",
+    "项目文档索引.md": "472cfda64b93d2ecbf2f6f0ea1340c9133e0b52d8eac4c287950de1491a8343a",
+    "AI助手使用说明.md": "b7a5ec7e4cd0472de6927f373d4d0fbea06c7c13df910de0ef8c834ba5731dbc",
+    "RAG知识库使用说明.md": "0da62bece4c61e90e2fd80f05fc49136c803fc88907fbd92a27cbb8513f1ab32",
+    "DESIGN.md": "25c3a9978819f243062abbfa31303b336e566ae9b9ce60f8099aa3fc0b8f12e9",
+    "AGENTS.md": "865c500ca950b77617960f44b93cb512794c5fd44f65eb0c6b222ec24c762739"
+  },
+  "originalFiles": [
+    "助手面板优化说明.md",
+    "健康咨询说明.md",
+    "界面优化验收记录.md",
+    "前端界面优化验收_20260907.md",
+    "AI统一入口验收记录.md",
+    "RAG验收记录.md",
+    "P1实施与验收报告.md",
+    "README.md",
+    "系统技术详解.md",
+    "项目文档索引.md",
+    "AI助手使用说明.md",
+    "RAG知识库使用说明.md",
+    "DESIGN.md",
+    "AGENTS.md"
+  ],
+  "removedFiles": [
+    "助手面板优化说明.md",
+    "健康咨询说明.md",
+    "界面优化验收记录.md",
+    "前端界面优化验收_20260907.md",
+    "AI统一入口验收记录.md",
+    "RAG验收记录.md",
+    "P1实施与验收报告.md"
+  ],
+  "updatedFiles": [
+    "README.md",
+    "系统技术详解.md",
+    "项目文档索引.md",
+    "AI助手使用说明.md",
+    "RAG知识库使用说明.md",
+    "DESIGN.md",
+    "AGENTS.md"
+  ],
+  "addedFile": "项目历史验收汇编_20260924.md",
+  "workspaceAgentsBackup": "workspace_AGENTS.md"
+}

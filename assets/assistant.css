@@ -1,0 +1,197 @@
+/* Code-native lunar surface: no external images or fonts. */
+#muan-ai-launch {position: fixed; left: 28px; bottom: 111px; z-index: 48; display: flex; align-items: center; gap: 13px; padding: 8px 0; border: 0; background: transparent; color: #f2d8ad; cursor: pointer; text-align: left;}
+#muan-ai-launch .moon-orb {position: relative; display: block; flex: 0 0 48px; height: 48px; overflow: hidden; border-radius: 50%; background: radial-gradient(ellipse at 27% 24%, #fff3ce 0, #f4d79c 35%, #d5a764 76%, #ac783d 100%); box-shadow: inset 2px 2px 4px #fff7dc99, inset -4px -3px 7px #8c5d3740, 0 0 22px #e8bd752b, 0 5px 12px #0004; transition: box-shadow .3s, transform .3s;}
+.moon-orb i {position: absolute; border-radius: 50%; background: #9e743c18; box-shadow: inset 1px 2px 3px #855e3d35, 1px 1px 1px #ffefc680;}
+.moon-orb i:nth-child(1) {width: 13px; height: 11px; left: 10px; top: 9px; transform: rotate(-24deg);}
+.moon-orb i:nth-child(2) {width: 8px; height: 8px; left: 29px; top: 26px;}
+.moon-orb i:nth-child(3) {width: 6px; height: 5px; left: 14px; top: 34px;}
+.moon-orb i:nth-child(4) {width: 4px; height: 4px; left: 33px; top: 12px;}
+.moon-orb::after {content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #132638f5, #172d40e8 47%, #172d4000 53%); transform: translateX(-105%); transition: transform .4s ease;}
+#muan-ai-launch[aria-expanded="true"] .moon-orb::after {transform: translateX(0);}
+#muan-ai-launch:hover .moon-orb {transform: translateY(-2px); box-shadow: inset 2px 2px 4px #fff7dc99, 0 0 28px #e8bd754d;}
+#muan-ai-launch strong {display: block; font-size: 14px; font-weight: 500; letter-spacing: 1px; color: #f2d8ad;}
+#muan-ai-launch small {display: block; font-size: 10px; margin-top: 5px; color: #b7c8d7; letter-spacing: 1px;}
+.workspace-bottom p {margin-bottom: 90px;}
+#muan-ai-panel {display: none !important; position: fixed !important; left: var(--ai-window-x, calc(var(--muan-sidebar-width) + 16px)); top: var(--ai-window-y, 32px); bottom: auto; width: var(--ai-window-width, min(720px, calc(100vw - 32px))) !important; height: var(--ai-window-height, calc(100dvh - 64px)) !important; box-sizing: border-box; min-width: 0 !important; min-height: 0 !important; max-height: none; overflow: hidden !important; z-index: 60; padding: 0 !important; gap: 0 !important; border: 1px solid #d8c7aa !important; border-radius: 20px !important; background: #fffaf1 !important; box-shadow: 0 18px 65px #14263835, inset 0 1px #fff;}
+#muan-interface[data-muan-view="workspace"][data-ai-open="true"] #muan-ai-panel {display: flex !important;}
+.ai-heading {display: flex; justify-content: space-between; align-items: center; color: #23394e;}
+.ai-heading strong {font-size: 20px; letter-spacing: 1px;}
+.ai-heading small {display: block; font-size: 11px; margin-top: 5px; color: #775829;}
+#muan-ai-close {width: 40px; height: 40px; border-radius: 50%; background: #efe6d8; border: 0; color: #23394e; font-size: 24px; cursor: pointer;}
+#muan-ai-panel .row {gap: 8px !important;}
+#muan-ai-panel > * {flex-shrink: 0 !important;}
+#muan-ai-panel .row > * {min-width: 0 !important;}
+#muan-ai-panel button {font-size: 13px !important;}
+#ai-chat {border: 1px solid #e6dbc9 !important; border-radius: 12px !important; background: #fffdfa !important;}
+#ai-privacy p {font-size: 11px; color: #5f6f7c; line-height: 1.7;}
+#muan-ai-panel textarea {font-size: 14px !important;}
+#ai-window-heading {padding: 18px 22px !important; border-bottom: 1px solid #e6dbc9 !important; background: linear-gradient(120deg, #fffaf1, #f4ead8) !important;}
+#muan-ai-drag {flex: 1; padding: 6px 0; cursor: grab; touch-action: none; user-select: none;}
+.ai-window-actions {display: flex; align-items: center; gap: 8px;}
+#muan-ai-reset {width: 36px; height: 36px; border-radius: 50%; background: #efe6d8; border: 0; color: #775829; font-size: 23px !important; cursor: pointer;}
+#muan-ai-panel #ai-window-body {flex: 1 1 0 !important; min-height: 0 !important; overflow: auto !important; overscroll-behavior: contain; padding: 18px 22px !important; gap: 12px !important; background: transparent !important;}
+#ai-window-body > * {flex-shrink: 0 !important;}
+#muan-ai-panel #ai-chat {height: var(--ai-chat-height, 340px) !important; min-height: 220px !important;}
+#ai-window-footer {padding: 3px 10px 3px 22px !important; border-top: 1px solid #e6dbc9 !important; background: #f8f0e2 !important;}
+.ai-window-footer {display: flex; justify-content: space-between; align-items: center; gap: 8px; color: #826b48; font-size: 11px;}
+#muan-ai-resize {display: grid; place-items: center; width: 32px; height: 32px; border: 0; border-radius: 8px; color: #a3783c; background: #eedfc4; font-size: 23px !important; cursor: nwse-resize; touch-action: none;}
+#muan-ai-drag:focus-visible, #muan-ai-resize:focus-visible, #muan-ai-reset:focus-visible {outline: 2px solid #a3783c; outline-offset: 3px;}
+#muan-interface[data-ai-window-action] {user-select: none;}
+#muan-interface[data-ai-window-action="move"] #muan-ai-drag {cursor: grabbing;}
+@media (max-height: 720px) and (min-width: 761px) {.workspace-bottom p {display: none;} #muan-ai-launch {bottom: 104px;}}
+@media (max-width: 760px) {
+ #muan-ai-launch {left: 14px; bottom: 16px; padding: 8px; border-radius: 40px; background: #1b3046; box-shadow: 0 5px 22px #14263835;}
+ #muan-ai-launch > span:last-child {display: none;}
+ #muan-ai-panel {left: 12px; top: 12px; right: auto; bottom: auto; width: calc(100vw - 24px) !important; height: calc(100dvh - 104px) !important;}
+ #ai-window-heading {padding: 10px 14px !important;}
+ #muan-ai-panel #ai-window-body {padding: 14px !important;}
+ #muan-ai-drag {cursor: default; touch-action: auto;}
+ #ai-window-footer {display: none !important;}
+ #muan-ai-reset {display: none;}
+}
+@media (prefers-reduced-motion: reduce) {.moon-orb, .moon-orb::after {transition: none !important;}}
+
+#ai-health-options {padding: 12px !important; background: #f2eadb !important; border-radius: 12px !important;}
+#ai-health-options p {font-size: 13px; line-height: 1.7;}
+
+#muan-kb-open {padding: 10px; border: 1px solid #d8c7aa; border-radius: 10px; background: #f3eadb; color: #23394e; cursor: pointer; width: 100%;}
+#muan-kb-panel {display: none !important; position: fixed !important; z-index: 80; inset: 5dvh 5vw; width: 90vw !important; height: 90dvh; min-width: 0 !important; overflow: auto !important; padding: 24px !important; background: #fffaf1 !important; border: 1px solid #d8c7aa !important; border-radius: 18px !important; box-shadow: 0 12px 90px #14263877;}
+#muan-kb-panel > * {flex-shrink: 0 !important;}
+#muan-interface[data-kb-open="true"][data-muan-view="workspace"] #muan-kb-panel {display: flex !important;}
+#muan-kb-close {background: #efe6d8; color: #23394e; border: 0; border-radius: 50%; width: 42px; height: 42px; font-size: 24px; cursor: pointer;}
+#muan-kb-panel .row > * {min-width: min(180px, 100%) !important;}
+@media (max-width:760px) {#muan-kb-panel {inset: 12px; width: calc(100vw - 24px) !important; height: calc(100dvh - 24px); padding: 14px !important;}}
+
+/* Unified assistant: shortcuts begin a task without resetting the conversation. */
+#ai-welcome-note p {color: #5f6f7c; font-size: 13px; margin: 0;}
+#ai-shortcuts button {background: #f4ead8 !important; color: #775829 !important; border: 1px solid #dfcaab !important;}
+#ai-route-label {padding: 2px 0 !important;}
+#ai-route-label p {display: inline-block; margin: 0; padding: 4px 10px; border-radius: 20px; background: #eaf0f3; color: #426078; font-size: 11px;}
+/* Fixed composer and header; only the conversation and document drawer scroll. */
+#muan-ai-panel #ai-window-heading {padding:12px 20px!important;background:#f6eddf!important;}
+#muan-ai-panel #ai-window-body {display:flex;flex-direction:column;flex:1 1 0!important;min-height:64px!important;overflow:hidden!important;padding:8px 16px 0!important;gap:4px!important;}
+#muan-ai-panel #ai-chat {flex:1 1 0!important;height:0!important;min-height:0!important;border:0!important;background:transparent!important;box-shadow:none!important;}
+#muan-ai-panel #ai-chat .message {font-size:16px!important;line-height:1.8!important;box-shadow:none!important;}
+#muan-ai-panel #ai-chat .user {background:#eaf0f4!important;border-radius:14px 14px 4px 14px!important;}
+#muan-ai-panel #ai-chat .bot {background:#fffdfa!important;border-radius:14px 14px 14px 4px!important;}
+#muan-ai-panel #ai-composer {flex:0 0 auto!important;min-height:0!important;gap:7px!important;padding:12px 18px 8px!important;background:#fffdfa!important;border-top:1px solid #e1ded5!important;}
+#muan-ai-panel #ai-shortcuts {gap:6px!important;align-items:stretch;}
+#muan-interface #ai-shortcuts button {min-height:36px!important;padding:6px 8px!important;border:0!important;background:#f2eadb!important;box-shadow:none!important;color:#775829!important;font-size:13px!important;white-space:nowrap;}
+#ai-tools-button {flex:1!important;padding:0!important;min-width:0!important;}
+#ai-tools-toggle {width:100%;height:100%;border-radius:8px;cursor:pointer;}
+#muan-ai-panel #ai-question {padding:0!important;border:0!important;background:transparent!important;}
+#muan-ai-panel #ai-question textarea {font-size:16px!important;line-height:1.65!important;max-height:100px!important;}
+#muan-ai-panel #ai-composer .row button {min-height:40px!important;}
+#muan-ai-panel #ai-composer > .html-container {padding:0!important;}
+.ai-privacy-brief {font-size:12px!important;color:#5f6f7c;line-height:1.6!important;margin:0!important;}
+#muan-ai-panel #ai-tools-drawer {display:none!important;position:absolute!important;z-index:5;left:12px;right:12px;top:80px;bottom:var(--ai-composer-height,260px);width:auto!important;min-width:0!important;min-height:0!important;overflow:auto!important;overscroll-behavior:contain;padding:16px!important;background:#fffdfa!important;border:1px solid #d8c7aa!important;border-radius:12px!important;box-shadow:0 8px 28px #14263829;}
+#muan-interface[data-ai-tools-open="true"] #ai-tools-drawer {display:flex!important;}
+#ai-tools-drawer > * {flex-shrink:0!important;}
+.ai-drawer-heading {display:flex;justify-content:space-between;align-items:center;gap:16px;}
+#ai-tools-close {border:0;background:#f2eadb;color:#1c3248;width:36px;height:36px;border-radius:50%;font-size:22px!important;cursor:pointer;}
+#muan-ai-panel #ai-window-footer {padding:0 10px 2px 18px!important;}
+#muan-ai-panel #ai-window-footer button {height:24px;}
+#muan-ai-panel #ai-route-label {padding:0 4px!important;}
+#muan-ai-panel #ai-route-label p {font-size:12px;}
+#muan-ai-panel #ai-tools-button .html-container {padding:0!important;}
+#muan-ai-panel #ai-shortcuts {height:40px!important;flex-wrap:nowrap!important;}
+#muan-ai-panel #ai-shortcuts > button,#muan-ai-panel #ai-tools-button {height:40px!important;flex:1 1 0!important;min-width:0!important;}
+#muan-ai-panel #ai-window-heading .html-container,#muan-ai-panel #ai-window-footer .html-container {padding:0!important;}
+#muan-ai-panel #ai-composer .html-container {padding:0!important;}
+#muan-ai-panel #ai-question {box-shadow:none!important;background:#fffdfa!important;}
+#muan-ai-panel #ai-question [data-testid="block-info"] {background:transparent!important;padding:0 0 4px!important;color:#526373!important;font-weight:400!important;}
+#muan-ai-panel #ai-question textarea {border:1px solid #d7dddF!important;background:#ffffff!important;}
+#muan-kb-panel {padding:22px!important;background:#f7f5ef!important;}
+#kb-layout {gap:24px!important;align-items:stretch;min-height:0;}
+#kb-library,#kb-reader {min-width:0!important;padding:18px!important;border-radius:12px;background:#fffdfa;border:1px solid #e1ded5;gap:14px!important;}
+#kb-library {flex:3 1 0!important;}
+#kb-reader {flex:5 1 0!important;}
+#kb-document {flex-basis:100%!important;order:-1;}
+#kb-library > .row > .form {flex-basis:100%!important;order:-1;min-width:0!important;}
+#kb-reader #kb-query {min-width:0!important;}
+#kb-original:has([aria-label="Empty value"]) {display:none!important;}
+#kb-catalog,#kb-results {overflow:auto!important;max-width:100%!important;border-radius:8px!important;}
+#kb-status p {font-size:13px;line-height:1.7;color:#5f6f7c;}
+#muan-kb-panel button {box-shadow:none!important;}
+@media(max-width:1100px) {#kb-layout {flex-direction:column!important;} #kb-library,#kb-reader {width:100%!important;}}
+@media(max-width:760px) {
+ #muan-ai-panel {top:8px;left:8px;width:calc(100vw - 16px)!important;height:calc(100dvh - 16px)!important;}
+ #muan-ai-panel #ai-window-heading {padding:8px 14px!important;}
+ #muan-ai-panel #ai-composer {padding:10px 12px!important;gap:6px!important;}
+ #muan-ai-panel #ai-window-body {padding:6px 8px 0!important;}
+ #muan-interface #ai-shortcuts button {font-size:12px!important;padding:5px 4px!important;}
+ #muan-ai-panel #ai-tools-drawer {top:72px;left:8px;right:8px;padding:12px!important;}
+ #muan-kb-panel {padding:14px!important;}
+ #kb-library,#kb-reader {padding:12px!important;}
+ .ai-privacy-brief {font-size:11px!important;}
+}
+@media(max-height:620px) {#muan-ai-panel #ai-composer {padding-block:5px!important;gap:4px!important;} #muan-ai-panel #ai-question textarea {max-height:70px!important;} #muan-ai-panel .ai-privacy-brief {display:none;} #muan-ai-panel #ai-window-heading {padding-block:5px!important;}}
+
+
+/* Keep Gradio's sticky chat labels and action buttons below the tools drawer. */
+#muan-ai-panel #ai-window-body {
+    position: relative;
+    z-index: 0;
+    isolation: isolate;
+}
+
+
+
+/* Align the search action with the input, below its label. */
+#muan-kb-panel #kb-reader > .row:has(#kb-query) {
+    align-items: flex-end !important;
+}
+#muan-kb-panel #kb-reader > .row > .form:has(#kb-query),
+#muan-kb-panel #kb-query {
+    padding: 0 !important;
+}
+#muan-kb-panel #kb-query textarea {
+    box-sizing: border-box;
+    height: 44px !important;
+    min-height: 44px !important;
+}
+#muan-kb-panel #kb-search {
+    align-self: flex-end;
+    box-sizing: border-box;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding-block: 8px !important;
+}
+
+/* Each shortcut reveals only its own preparation controls. */
+#muan-interface #ai-knowledge-tools,
+#muan-interface #ai-privacy-tools,
+#muan-interface #ai-summary-tools,
+#muan-interface #ai-current-tools,
+#muan-interface #ai-record-tools {display:none!important;}
+#muan-interface[data-ai-tools-view="knowledge"] #ai-knowledge-tools,
+#muan-interface[data-ai-tools-view="knowledge"] #ai-privacy-tools,
+#muan-interface[data-ai-tools-view="result"] #ai-summary-tools,
+#muan-interface[data-ai-tools-view="record"] #ai-summary-tools,
+#muan-interface[data-ai-tools-view="result"] #ai-current-tools,
+#muan-interface[data-ai-tools-view="record"] #ai-record-tools {display:flex!important;}
+
+
+/* Long citations remain readable inside the knowledge drawer. */
+#muan-ai-panel #ai-references textarea {
+    height: 160px !important;
+    min-height: 160px !important;
+    max-height: 160px !important;
+    overflow-y: auto !important;
+    scrollbar-gutter: stable;
+    overscroll-behavior-y: contain;
+    touch-action: pan-y;
+}
+
+/* Keep references compact; show a clear scroll track for overflowing text. */
+#muan-interface #muan-ai-panel #ai-references textarea {
+    height: 160px !important;
+    min-height: 160px !important;
+    max-height: 160px !important;
+    overflow-y: scroll !important;
+    scrollbar-width: auto;
+    scrollbar-color: #8b7758 #f2eadb;
+}
+#muan-interface #muan-ai-panel #ai-references textarea::-webkit-scrollbar {width: 12px;}
+#muan-interface #muan-ai-panel #ai-references textarea::-webkit-scrollbar-track {background: #f2eadb; border-radius: 8px;}
+#muan-interface #muan-ai-panel #ai-references textarea::-webkit-scrollbar-thumb {background: #8b7758; border: 3px solid #f2eadb; border-radius: 8px;}

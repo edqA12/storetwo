@@ -1,0 +1,86 @@
+{
+  "AGENTS.md": {
+    "before": "FE925681D047234BA7EC93FFDE376B7FA73CA16C2F00860621EBB18AE130E0AB",
+    "after": "55ece25bed9492bab4511c988eeb0164da6dd544d3184b89a5d7e5c0dbf3244c"
+  },
+  "services\\live_records.py": {
+    "before": "91E91709C14221284616C4B7D1129F88D0D5ABD0682F7AE8C0EEC8113B6F6695",
+    "after": "7fcc8950decf3bced5d5093387dddd4d9b11ddface7d918255940f6502118a07"
+  },
+  "camera_capture\\manager.py": {
+    "before": "2C81BD4542194B81C0F8D0AE99E5AA2763F29A6B9D6F844F165DF467A45002C0",
+    "after": "171259c715fb824a848651c982a18a6a8899a124c45645b50b7208ba7e26bd83"
+  },
+  "core\\config.py": {
+    "before": "CB7D5F091C13419BA008CB7B0AACC02819D16F5A1CDB88C224A7E41B2B94F10B",
+    "after": "749981b8e95b1ee21679c8548be5071071fa29dc9784b9c51d902bc351bfae19"
+  },
+  "README.md": {
+    "before": "E1623472BE8F554E850351D488AE779F8CFF943644A35D9FBE4AC4955E7C09B8",
+    "after": "d8b7fdb3c6d3df09eca3b12cf3462b0ee638b9c3bd60e71176969a84b77d9639"
+  },
+  "services\\astra_live.py": {
+    "before": "09C43BB7101F9273B2A044098B5A77EE2B2F93E5CD999FBC730B448DC46A85E4",
+    "after": "029d435d95ae2f773b1d97e4816bbb6f22607e43e57dcb77e6ba0f2f67286724"
+  },
+  "Astra实时页面使用说明.md": {
+    "before": "ED35CAE585FF580538D7274EABFA2A744A2885EC83527363F00FFE280D738B56",
+    "after": "bbfe65c3ff45d3cc668cb91bca69211c50f1df623ff834b4e3ce6e24d47708ad"
+  },
+  "camera_capture\\openni.py": {
+    "before": "723BA33FEA6D0942749B1F7B504E3E3B1CFF32EB0CF66C6F9B38F6E4BCA4C017",
+    "after": "b2ce2de8cf577bdd28b6068b4ceaadd3cd9765be4e017679b5d3c84461112fd9"
+  },
+  "app.py": {
+    "before": "CB32A2CE519699FC0E9D313DCD80FEE9414DEAC47C145A738C44698AA7F244BC",
+    "after": "2c95610f91831cefc2ff304b154fcd970ab856f7144c4742ee7b9c44ed6d8761"
+  },
+  "项目文档索引.md": {
+    "before": "A77325519FE6A12BCAEDC7C7C37A5D30D86DC89C17C62CC03AD8DAE82D353ECF",
+    "after": "2970a46894f183c2298468eee65ddfd0c3a9c2100ba27ee7786e8e794fd2cc12"
+  },
+  "系统技术详解.md": {
+    "before": "71D10C5207C7084CDF8BB3003C1831340E77BC261B2F41859824C514E5232251",
+    "after": "4e31449b07637d499ffb0d004a902009fcb217fa998ceebe3ceb4ac270343aee"
+  },
+  "config.yaml": {
+    "before": "8FD2AC7831149C2EE1F4F96DC79EB9DD80D291C05A88E6E8687498D967F843C0",
+    "after": "abc7771df16cce3525733f07a7024f5da934b7cb344c864d591482a72f462d8f"
+  },
+  "tests\\test_astra_openni.py": {
+    "before": "E7DE901B2F580023F138DA02F361A2BECDF1C57007030F15EA51092F26FB774C",
+    "after": "28d20ffec9e09fd9f8f1ad896c9ea4a322b9f514f0c97dbfd69ff4f46d5ed9ef"
+  },
+  "tests\\test_astra_live.py": {
+    "before": "CA4DFF9FDD2DA3F4CB943472630118BA73255718BEB0462DC439BC49798B6A51",
+    "after": "34198e1f3e41de4bce5940e9bc04fa2c253959859953cd5800a7531eee020142"
+  },
+  "core/spatial.py": {
+    "before": null,
+    "after": "0c0f3e705c1fee60e7c7a17f7936d712c8476ff6860bf0268e290f8bc7b0f724"
+  },
+  "scripts/astra_spatial_calibrate.py": {
+    "before": null,
+    "after": "aa1d7c78cddee113107c2f618bffd97eedf711c8d95f2e7424de18b0cab1a42c"
+  },
+  "scripts/evaluate_spatial_features.py": {
+    "before": null,
+    "after": "62ba7600f16b1214a09398e7832ad2290d740b6511fab3ba34eab85b1c768448"
+  },
+  "tests/test_spatial.py": {
+    "before": null,
+    "after": "2f84b2f56de2ee10e62a07a37d946ac44e76b8537b8fd3a82d65542ba6db7712"
+  },
+  "tests/test_spatial_evaluation.py": {
+    "before": null,
+    "after": "03b0dcbe3597ab91dabe4977a0b04662c1633f62a8ad57ce44b8df88aa984ece"
+  },
+  "Astra人体三维分析说明.md": {
+    "before": null,
+    "after": "43238f29f00cfaa78bd2a780b4c4f5b00bec633733dfb2e80e3170bdea5e6380"
+  },
+  "Astra人体三维验收_20260923.md": {
+    "before": null,
+    "after": "0480348e30daf9182507a9ac43e0a182c5954b64407a79ffcad0407cca569538"
+  }
+}

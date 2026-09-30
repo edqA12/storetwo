@@ -1,0 +1,1319 @@
+{
+  "createdAt": "2026-09-24T16:28:44.5689335+08:00",
+  "sourceRoot": "C:\\safe\\data",
+  "backupRoot": "C:\\safe\\_backup\\pytest_data_cleanup_20260924_162844",
+  "directories": {
+    "pytest_codex_run2": {
+      "directories": [
+        "test_event_crud_and_deduplicat0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 198,
+          "sha256": "8F9646F67CBBB007DA8B07C090B70989771444926A54A7244F1C3FF9035CE6CC"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 24576,
+          "sha256": "E2179196F278C73A6F9815780F065179F5D5B375FAEAE1F5AC20389652C74E4C"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 24576,
+          "sha256": "C739FD82102416BD99C338EC28821ACA04B982DF27D4C9B538FA0C6412FB9EC4"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 24576,
+          "sha256": "BCD15144F9E622403568592EE88E92613D98FA00A6783A0785AB465141C85C9A"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\e0fcf5c8c25a4067b74314bcc74eeac0_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_p1_final_subset": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "59714E844AED9DF25EB8E6BB4FEE38311F8579B80044B0827F6452C6179C89E7"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "AB429C7C85B93D75EDF1F6F9BB09DBD1A0747CB3FBB5841534F349F691F019FD"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "DE6C14604A514291F0B97638A4CFAD244351C4E2F030F463590268FE7A417429"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "1EBCA70801CDC528E6D3AD2A9536F7D5EB5ACD174E459786C2CF9D06BFCADA53"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "93EA1F2C2B1A9B7976A3A431FD2B6ACCA518A86646BE8AA9C84F984233828B31"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "71DDC55C59A0619F1A1B0C4732BE8F8A2ADAAE4185B3BB99087E9C1BBA9C9B2A"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "C9AF499B87C0DB189639E9FA1319994B0416AEB19EAE83A74C25689CD9FDE6BA"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "25EFF23294E7301C1554E95A4270D63A22450759725DE2AA159A07D203D70ACD"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "AA5E8C4BFE2AA87D38F071BA111600D1EBD06027E6F13D4C33206F60A76994F7"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "C46EE2E60E76119BF7E684F42A92E5C784AAE3F7320D2FD583DE7F431C241511"
+        }
+      ]
+    },
+    "pytest_p1_final_subset2": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "B66D2EF82A0A7C1FCF2A952EA0AFC3B39938E4FC17DC6376A4343833BBBC217D"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "DA23A7521E6E591FF58449D445109CA0165AA286F7ED86F7453A9EB23B8D614E"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "F5FE7B5D397A32AF5BDA956D735DCBB7B7B6C9984CE734051AB1F734D9A5D0D3"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "DA4E166E0D1704D23A16B2FB124FC954BDF764C51691684853DF1072252B018F"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "3B591E3CBB59158BEBE47013B13F5ACEAA8D07D07A6C3C5ACB0D9BC0FCE95CB0"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "413DD971E7D9BFD47EE8C5EC3DEA45D360BB34DD02FAC5D547B07B5DB5077E00"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "69C1335BDBBE9E51B1B9EA2CA929B7BAD46CEE29E5CD21CE713B66C7697A614B"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "C370C560B5BD889190677D8BFDD01EA391174D1CC0B5F38EB0D39E7FFC2E3669"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "8FDA2D6AE79EE72EF74790EEBE6853927CE4D8AF11665F4DFDD2A28205D37FCD"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "AFCFAF42CD0A59CBEEEDF65CA002952DAFA789F925739361C3542ABBCA91E752"
+        }
+      ]
+    },
+    "pytest_p1_full_final": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "245B511F4978791D1CE077CF2BF1613E3CA8BC6DF399F85C73C1AFE2FE3C4BFD"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "47313F90BE4C98D037FBBF5C22DB691C0BDF897F3D50F7E16521C51C87298D5E"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "597AF5540F6C71D61FBD6CCCD012ABD692A07813AADA60736E4D0F80C7F2C427"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "F65E78E0BB8E5661DA5B4487D1DF81D4B050A7252B052C207D6DA2B7104D7E1D"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "E3B09EA2B6E54DFE4536CD3962C0782B960DEA5F0372776EDC5D107890F814BA"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "EBD99352CFB3687B79933FEDCFEB5DD5CEE539F383E5677AC986DAD1C902F81C"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "7A71A2667381C2ED8DE4186A12312AB799E3546D46D656A9C286AC67F9450290"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "F58951C9D63EEA91A5D28A6A7D9568C39E57C362E6F1059CBC4EEA57AD105A91"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "86965FBC736F6B52B779F71F7B822CF2AE2181BBFA5E494CB238DDF14F11AD94"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "72B7744E1769B5545C81AFDEB3EAB10979254C1E3E452FA02EC287931A6B83B6"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\8c3679e6f94940a5935dc9851e3712ef_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\a7e154dd1e5c4440a7a4dd273a0536c4_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_p1_full_final2": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "3D514680F76C5E6621A75DDA900474098833C121989104ECA73FDEEEC81EFA40"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "104145A0B7208AB94A148D471E9905E2290D21EC9ADD1CB89DA71E2809379694"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "11D0DF13A6C66D3C177D0F7343E6F3271AF72465DAA3F69546291A416BE0786E"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "47214B3F80B2D6AECC7D2ECF1AAE42D8320D0DE0509E7893C8D59B4EC4D87F60"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "F7E599BE0F29A31B81DF929C162133886BBF586D17649554D115138269F6195A"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "AD0CD1DF0B37F4E7AAACC5106AA7D26A2AEBBA2AEB48BAA4F7D93D18F4038A07"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "8486F2254C53A7CF639CC0F6AD2D51B262F34F8A3FD10468939AFEB2925AB9C5"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "4E3CC04BCDED750DD045A8845FEFAC8F5C8C7C07AFFDD7350BF3BBB240C42D2D"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "4BCF4F5D83046FCCA7BD1FA71DACBF950674998EDA10C35A921B8B322175194A"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "22400C6B269EE87309F7FBAA9039A2924391D56FF2C26D67F0176BBB44382B49"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\9e51b0de130f407cb115b03d85ae3cd8_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\1a2b2961b6d2403d8b2bbf432e0638a5_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_real_prefall_20260901_a9f6": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "F26216E8EA6962B97F08642434BBAE81AF4C2F166E6872B75D8C85932CBD5C30"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "0647E994D4B210090B7F8F4CA2D30FA3258257FCBBEFFBA1C16A21B549885050"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "A949A9C01C91CA55EB415C0285B4850640A107A107520ECA0AA4E909A6562D57"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "76CEBB1A860E09BD54E253E5A152D5DA8890B245EB96B6594603552D81C17469"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "4BDE6CBBA87A1E4861EAA51A6BE658F0498077E6D9D5A6421DE283DBD6AC7290"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "B32405B4700901F71D50496D826F11D1695AF31898CEC7C1651D99F2603F87AD"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "CC09C5BF7E1183CEAC7BC4F78A365C67B9282F95CD8B4ED4A630DFE00977F487"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "420A135ABA80B7DD122482329E44E93F6F00395E5B2BB2A8B11ADADED9088107"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "8C62187A13013BE4931785D54555803FDFD5D0095B4D721705C425681F8FC7F9"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "6BAD67C6BDEB0042136DD6B0B15EC19B543F77E498B769CAA7A55BCD2066579E"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\3af32364765645d9848a1a39bb5ba177_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\009951d3eedf4d6e8926b94f8cbe37b8_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_sts_final_20260901": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "165C92067B6FAFA4955541CA88A237220778038019F0A029397D6BBDFE02EF37"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "7A4343CFC443E595BCA4FFBEC3E9E0DBD8D948BD8B9D02C3265B9A242CF6BE4B"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "732D6EC0F3288AC10E4D8CEDD8C4C5639743D0A8144245A69BEFE3B4B325C57C"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "B82B5957E463860AE84B2A195C466EF595D0BB1E4C0DF3219323F22C6848402C"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "BFE0F7FCC0492DDFA9230074574212A49C4BF158614A7CA3E1D3969CEC42514D"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "4735D4734DF38E438390C94629C52D1169492CD5AD5C101ADDF0A1323865AF18"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "2FE4B961D714910DCFB11A8B0F633BE2851B0C5AC90B64524FF5ABEB5582132F"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "BB63B0000DFB0CD89C11B1F81073DB432B0C514EC7B122E4AF55F9148538B360"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "C503E2EC95DBB87D144C8B79BF141D2664F0E2F18F84D2C50F538F319FDFAB25"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "A1D19D8064965ADCB5A66FE6A24906F68C22E67AB985979FD47F1C3DA0C7A90C"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\eb03e4098cf24536bdb78fe771f5a2ac_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\5ebd234124694f0f811ffc70ffd4af79_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_sts_opt_20260901_b1": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_split_rgb_depth_frame_use0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\58140b1dcc96477ea24f8890ff87a195_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\bf57392501f94198bfc0e5d882034efa_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_sts_targeted_20260901c": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_split_rgb_depth_frame_use0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\3fc75a6734bc4dff88819c25ddf4ce42_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\60197bd94a494f1fbc7ef48da7741e84_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_sts_targeted_20260901d": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_split_rgb_depth_frame_use0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\86b6dede344b4256b4e084ac318d35dd_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\afd72853b20e488eabde0e096d5da695_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_sts_targeted_20260901e": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_split_rgb_depth_frame_use0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\da5e8479c5954464bdf9198e029c3812_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\cb492ce306364e04ac5e8853e6b11774_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_sts_targeted_20260901f": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_split_rgb_depth_frame_use0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\86619a69f156406f815591d88b4527d7_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\f2dc66d3c1ec4eebb3ad60d96be4efce_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_tmp_20260902": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "82E1E005C6E285FB7F835E4C150B6140739DFB30C656EDE032FDEA6EB5C68A15"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "828E1132B235A5FA2537FFEEF6B23DF47E9B9B05100F7FB009D12B2429AE94C6"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "D1BB44DFE8528F24AB1FB054038AEF2631F4209E1598A8CA07B01EA3F6DF587E"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "CDBF1F6B115480005B655D1E7843B77D0C0D153F31CAE515D0FC37826F03FAE1"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "96F612B2BB632A0870E9CAB282EB4E48234386285640AAE885711FE79F7938DE"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "550CAE8324F7E937350443DAB3910A89022AB95BE19F277B455121A6CFA90E7B"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "95FD05554418DA25AC913378FC521AF047EA24E602776D110C653F7941A23C09"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "2EC81A07B2706EF9D6B16F07A13D4616B570859F67D553FDCC645523C83136EA"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "08210D65D06EDE7EDF4BC6AB0C228738289A58021ABFF107B01F89C6B5D37EC5"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "51E964FDA3EA7AB63EF2EF2C7E498EEC990D6A6594C464273BA75BC4406AE47B"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\2370bab920a24110b98af6d8b4a7c932_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\0fdf800fbd694a948c990763938da2aa_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_tmp_final_audit": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "27167570BB7AACAC2B2353E8418B840AF8B2CEB3D3A53AA15451884917A955B7"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "0BCAD376E7EAF29C474482AE28D3960CF2C9DD29A897FEA9964AAF66E3C23A63"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "9D4A767481C101B02D719062EEC763912CABF87D2F6D9A3964F3179870E6967E"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "8F5EC0AE3A78B72776F7721F03BD72C73BD9C48511EFF1F8F95A67DF560EFCDD"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "45AE7AC7D08B963CF1E4C24B75BCC68E035A38DEC369F33AC8D01CA3C528D3F3"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "9C9FCDFAF3EEE29E1DA41DC724834B14F18502C78D6A7A65EDB5B60F6934ECD2"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "9305214313F073E451F34635A9A421A260CFA401204C1373205865A0F2451B79"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "8ECAEE990E9E54A1CA6AA9AAE4557712B73E5131C085D90B2A40B2F68B398AC9"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "9BF1F7947A13587E1BEE7C48BD1D8E6ABF516D4C32695C61745630981FB70AE5"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "DB93598D9AA66805CE75D055C3FB71D57FAED3BB95378C8496FCD9EEFF93E620"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\cff73a0f71e1466393d0afe1172f43d9_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\9b9d505540774b01b539678cb2c74b5e_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    },
+    "pytest_tmp_specialized": {
+      "directories": [
+        "test_depth_only_change_does_no0",
+        "test_depth_pipeline_detects_do0",
+        "test_depth_pipeline_uses_raw_m0",
+        "test_event_crud_and_deduplicat0",
+        "test_event_stores_modality_res0",
+        "test_existing_event_database_i0",
+        "test_fusion_confirms_supported0",
+        "test_fusion_downgrades_conflic0",
+        "test_fusion_falls_back_when_de0",
+        "test_multimodal_pipeline_accep0",
+        "test_multimodal_pipeline_prese0",
+        "test_personal_baseline_is_load0",
+        "test_personal_baseline_profile0",
+        "test_pre_fall_and_near_fall_re0",
+        "test_sit_to_stand_event_and_mo0",
+        "test_split_rgb_depth_frame_use0",
+        "test_suspected_fall_event_type0",
+        "test_two_stream_states_do_not_0",
+        "test_video_processor_selects_m0",
+        "test_video_processor_selects_m0\\data",
+        "test_video_processor_selects_m0\\data\\exports",
+        "test_video_processor_selects_m0\\data\\results",
+        "test_video_processor_selects_m0\\data\\snapshots",
+        "test_video_processor_selects_m0\\data\\uploads",
+        "test_video_processor_selects_m0\\models",
+        "test_video_roundtrip_with_fake0",
+        "test_video_roundtrip_with_fake0\\data",
+        "test_video_roundtrip_with_fake0\\data\\exports",
+        "test_video_roundtrip_with_fake0\\data\\results",
+        "test_video_roundtrip_with_fake0\\data\\snapshots",
+        "test_video_roundtrip_with_fake0\\data\\uploads",
+        "test_video_roundtrip_with_fake0\\models"
+      ],
+      "files": [
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.csv",
+          "bytes": 227,
+          "sha256": "63B4D76C37F8D2CE78BA7E9B31BBEBF0FA4FC5AAF1C48D0FF2DBD62DE550DD6E"
+        },
+        {
+          "path": "test_event_crud_and_deduplicat0\\events.db",
+          "bytes": 90112,
+          "sha256": "ABDD934D1FBCDA5BD65939670BAE24AD98168B30E55E35EFAA3E7663C6FC5A6E"
+        },
+        {
+          "path": "test_event_stores_modality_res0\\events.db",
+          "bytes": 90112,
+          "sha256": "7A0B631DB6BE78C32BADDF0C5A63736C69D36C604230638A4E5B4B67C3EDA5F2"
+        },
+        {
+          "path": "test_existing_event_database_i0\\legacy.db",
+          "bytes": 90112,
+          "sha256": "CF186F35736137E19E6FFA27A4BF8EFF3F154111CF43F86BFF115F54707AC3F2"
+        },
+        {
+          "path": "test_personal_baseline_is_load0\\events.db",
+          "bytes": 90112,
+          "sha256": "6BB94DFAE9B6A48E229C08AE5272FCCB63C4FE01B49C166A0F02EF30F38B0E7E"
+        },
+        {
+          "path": "test_personal_baseline_profile0\\events.db",
+          "bytes": 90112,
+          "sha256": "C36E8281D1B739B497A0AD2F8CCE2CF6DAE102EE33047C8CFC3C786453598BF4"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\events.db",
+          "bytes": 90112,
+          "sha256": "B303EBE464960A8227ACA424A87CD2B476DBFE5E0B6F4080F8AC71A35F77C35E"
+        },
+        {
+          "path": "test_pre_fall_and_near_fall_re0\\pre_fall.csv",
+          "bytes": 529,
+          "sha256": "144D0862C316C67FB30F7E02D3BAE166C51B43E6B8E13142B03546397FFC2C58"
+        },
+        {
+          "path": "test_sit_to_stand_event_and_mo0\\events.db",
+          "bytes": 90112,
+          "sha256": "68AEC4C048B4E41C6654AD471007799E9B3AE3BD3BDB4C84A6A8B31E74356D6E"
+        },
+        {
+          "path": "test_suspected_fall_event_type0\\events.db",
+          "bytes": 90112,
+          "sha256": "FA68AADCB3AE335E075625A9A717E2CFE1EE46F0669A2DFC54CD11D4B89F877E"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\composite.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_processor_selects_m0\\data\\results\\d036f6feb8f24510b5d0b9390ab169bc_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\events.db",
+          "bytes": 90112,
+          "sha256": "847834CD4EAD0C7DE855B81C6B528378255D36AF51F7A8596AFDDC0052A6445F"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\data\\results\\a3513f6c810e41279a6c5a876ce8630a_detected.mp4",
+          "bytes": 2163,
+          "sha256": "BBDCEDFB88E08C6D0A8A6C33E4659237590A333511CABA44F5F8D0D4085237A9"
+        },
+        {
+          "path": "test_video_roundtrip_with_fake0\\sample.avi",
+          "bytes": 7260,
+          "sha256": "4D3E0B8A7BC3259D2036BF002FCE672B5443A14248175484A5B48CAA154D3329"
+        }
+      ]
+    }
+  }
+}

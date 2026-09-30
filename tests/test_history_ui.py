@@ -233,5 +233,6 @@ def test_ui_starts_empty_and_history_does_not_share_inference_queue(monkeypatch)
     assert len(callbacks) == 5
     assert all(fn.queue is False for fn in callbacks)
     inference = [fn for fn in ui.fns.values() if fn.concurrency_id == "pose-inference"]
-    assert len(inference) == 2
+    inference_names = {fn.fn.__name__ for fn in inference if fn.fn}
+    assert {'process_uploaded_video', 'process_camera_frame', 'tick_astra', 'start_astra'} <= inference_names
     assert all(fn.concurrency_limit == 1 and fn.queue for fn in inference)

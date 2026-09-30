@@ -32,7 +32,27 @@ video:
   fallback_fps: 25.0
   default_frame_stride: 1
 
+astra:
+  sdk_dir: 'E:\orb\OpenNI_2.3.0.86_202210111950_4c8f5aa4_beta6_windows\Win64-Release\sdk\libs'
+  result_max_age_s: 2.0
+  page_timeout_s: 30.0
+
 multimodal:
+  # Raw depth and software pairing defaults; engineering settings, not calibration.
+  raw_depth_min_m: 0.6
+  raw_depth_max_m: 6.0
+  raw_min_valid_ratio: 0.08
+  raw_motion_m: 0.05
+  raw_impact_m: 0.5
+  raw_jump_m: 1.5
+  raw_jump_ratio: 0.6
+  raw_temporal_gap_s: 0.75
+  sync_tolerance_s: 0.05
+  frame_max_age_s: 0.25
+  sync_buffer_size: 8
+  clock_warmup_frames: 8
+  clock_residual_limit_s: 0.15
+  color_receive_offset_s: 0.0
   enabled: true
   depth_side: left
   split_ratio: 0.5
@@ -152,3 +172,16 @@ server:
   host: 127.0.0.1
   port: 7860
   open_browser: true
+
+# 延期：以下配置保留给独立三维工具，正式实时监测不加载或运行三维分析。
+spatial:
+  calibration_file: data/calibration/astra_spatial.json
+  keypoint_confidence: 0.5
+  min_samples: 12
+  min_valid_ratio: 0.5
+  max_depth_spread_m: 0.15
+  max_gap_s: 0.75
+  low_height_m: 0.55
+  max_speed_m_s: 4.0
+  max_reprojection_px: 3.0
+  max_floor_residual_m: 0.02

@@ -1,0 +1,213 @@
+/* Approved MuAn identity. Components and callbacks remain native Gradio. */
+:root {--muan-sidebar-width: 224px;}
+.gradio-container {max-width: none !important; padding: 0 !important;}
+.gradio-container .main, .gradio-container .contain {max-width: none !important; padding: 0 !important;}
+.gradio-container footer:not(.ma-footer) {display: none !important;}
+.gradio-container, gradio-app {background: #f8f5ef !important;}
+body, #muan-interface {
+  background: #f8f5ef !important;
+  color: #23394e !important;
+  font-family: "Microsoft YaHei", "Segoe UI", system-ui, sans-serif !important;
+}
+#muan-interface {
+  --ma-paper: #f8f5ef; --ma-surface: #fffdfa; --ma-ink: #23394e;
+  --ma-muted: #5f6f7c; --ma-border: #dedfdc; --ma-blue: #426a87;
+  --ma-soft: #ecf1f4; --ma-gold-soft: #f4e7d2; --ma-gold-ink: #775829;
+  --ma-shadow: #20374a0c;
+  --body-text-color: #23394e; --body-text-color-subdued: #5f6f7c;
+  --background-fill-primary: #fffdfa; --background-fill-secondary: #f2f3f2;
+  --block-background-fill: #fffdfa; --block-border-color: #dedfdc;
+  --block-label-background-fill: #fffdfa; --block-label-text-color: #4a6072;
+  --block-title-text-color: #23394e; --input-background-fill: #ffffff;
+  --input-border-color: #d3dadf; --input-placeholder-color: #6a7882;
+  --neutral-800: #23394e; --neutral-700: #3d5366;
+  --border-color-primary: #dedfdc; --border-color-accent: #b9cbd8;
+  --table-even-background-fill: #fffdfa; --table-odd-background-fill: #f4f5f4;
+  --table-row-focus: #e8f0f5; --table-border-color: #dedfdc;
+  --table-text-color: #23394e;
+  color-scheme: light !important;
+  max-width: none !important; margin: 0 !important; padding: 0 !important;
+  border: 0 !important; border-radius: 0 !important; overflow: visible !important;
+  font-size: 15px !important;
+}
+#muan-interface .main, #muan-interface .contain {max-width: none !important; padding: 0 !important; gap: 0 !important;}
+#welcome-block, #workspace-chrome {padding: 0 !important; margin: 0 !important; border: 0 !important; overflow: visible !important;}
+#app-shell {display: none !important;}
+#muan-interface[data-muan-view="workspace"] #welcome-block {display: none !important;}
+#muan-interface[data-muan-view="workspace"] #app-shell {
+  display: flex !important; gap: 0 !important; min-width: 0 !important;
+  margin-left: var(--muan-sidebar-width); width: calc(100% - var(--muan-sidebar-width));
+  padding: 0 32px 30px !important; box-sizing: border-box;
+}
+#muan-sidebar {
+  position: fixed; top: 0; bottom: 0; left: 0; width: var(--muan-sidebar-width);
+  z-index: 40; box-sizing: border-box; padding: 30px 18px;
+  background: linear-gradient(170deg, #223b54, #142638); color: #f4f3ee;
+}
+.workspace-brand {display: flex; align-items: center; gap: 10px;}
+#muan-sidebar .ma-mark {background: #ffffff0c; border: 1px solid #eab87946; width: 38px; height: 44px;}
+.workspace-name {display: block; color: #f4f3ee !important; font-size: 22px; line-height: 1.4; font-weight: 700; letter-spacing: 2px; white-space: nowrap;}
+.workspace-english {display: block; font-size: 11px; color: #b7c8d7 !important; letter-spacing: 1.8px; margin-top: 3px;}
+.workspace-navigation-label {margin: 36px 12px 0; color: #b7c8d7; font-size: 12px; letter-spacing: 1px;}
+.workspace-bottom {position: absolute; bottom: 22px; left: 28px; right: 28px; border-top: 1px solid #ffffff24; padding-top: 20px;}
+.workspace-bottom p {font-family: "SimSun", serif; color: #e6c18f !important; font-size: 15px; letter-spacing: 3px; line-height: 1.8; margin: 0 0 16px;}
+#muan-home {display: flex; gap: 10px; align-items: center; min-height: 44px; padding: 4px 0; border: 0; background: transparent; color: #d3dee7 !important; font-size: 14px; cursor: pointer;}
+.workspace-bottom small {display: block; margin-top: 10px; font-size: 11px; color: #b7c8d7 !important;}
+#muan-workbar {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+  min-height: 73px; gap: 12px; margin: 0 -32px 26px; padding: 16px 32px;
+  background: #fffdfa; border-bottom: 1px solid #dedfdc;
+}
+.workspace-breadcrumb {font-size: 13px; color: #5f6f7c;}
+.workspace-breadcrumb span {margin: 0 10px; color: #a3aab0;}
+.workspace-breadcrumb strong {font-weight: 500; color: #23394e;}
+.workspace-platform {font-size: 12px; color: #5f6f7c;}
+#muan-menu {display: none; align-items: center; gap: 8px; min-height: 44px; border: 0; color: #23394e; background: transparent; font-size: 14px; cursor: pointer;}
+#muan-navigation-message {padding: 12px 16px; margin-bottom: 18px; border: 1px solid #e7c595; border-radius: 10px; color: #694418; background: #fff0d9; font-size: 14px;}
+#muan-navigation-message[hidden] {display: none !important;}
+#workspace-tabs {width: 100%; min-width: 0; background: transparent !important; border: 0 !important; padding: 0 !important;}
+/* Gradio measures ghost buttons to collapse horizontal tabs. Vertical items
+   each use their own row, so the horizontal width probe must take no space. */
+#workspace-tabs .tab-container.visually-hidden button {width: 0 !important; min-width: 0 !important; padding: 0 !important; border: 0 !important; font-size: 0 !important;}
+#workspace-tabs .tab-wrapper {height: 0 !important; min-height: 0 !important; border: 0 !important; margin: 0 !important; padding: 0 !important;}
+#workspace-tabs .overflow-menu {display: none !important;}
+#workspace-tabs [role="tablist"] {
+  position: fixed !important; left: 14px; top: 150px; width: calc(var(--muan-sidebar-width) - 28px);
+  z-index: 45; display: flex !important; flex-direction: column !important; align-items: stretch !important;
+  gap: 8px !important; padding: 0 !important; margin: 0 !important; border: 0 !important;
+  background: transparent !important; box-shadow: none !important;
+  overflow: visible !important; flex-wrap: nowrap !important;
+  height: auto !important; min-height: 0 !important;
+}
+#workspace-tabs [role="tablist"] button[role="tab"] {
+  width: 100% !important; min-height: 50px !important; margin: 0 !important;
+  display: flex; align-items: center; justify-content: flex-start; gap: 12px;
+  border: 1px solid transparent !important; border-radius: 9px !important;
+  padding: 12px 16px !important; background: transparent !important;
+  color: #d3dee7 !important; font-size: 15px !important; font-weight: 400 !important;
+  box-shadow: none !important; white-space: nowrap;
+}
+#workspace-tabs [role="tablist"] button[role="tab"]::before {font-size: 11px; opacity: .8; letter-spacing: .5px;}
+#workspace-tabs [role="tablist"]::after, #workspace-tabs [role="tablist"] button[role="tab"]::after {display: none !important;}
+#video-tab-button::before {content: "01";}
+#live-tab-button::before {content: "02";}
+#events-tab-button::before {content: "03";}
+#risk-tab-button::before {content: "04";}
+#workspace-tabs [role="tablist"] button[role="tab"].selected,
+#workspace-tabs [role="tablist"] button[aria-selected="true"] {
+  background: #edc38f !important; color: #203248 !important; font-weight: 600 !important;
+}
+#workspace-tabs [role="tablist"] button[role="tab"]:hover {border-color: #d4dce449 !important;}
+#workspace-tabs [role="tabpanel"] {padding: 0 !important; border: 0 !important; background: transparent !important; min-width: 0 !important;}
+#workspace-tabs [role="tabpanel"] > .gap {gap: 22px !important;}
+.section-intro {text-align: left; margin: 0 0 4px;}
+.section-intro h2 {font-size: 30px; line-height: 1.4; font-weight: 650; color: #23394e !important; margin: 0 0 10px; letter-spacing: -.5px;}
+.section-intro p {font-size: 15px; color: #5f6f7c !important; line-height: 1.7; margin: 0;}
+.muan-card {padding: 24px !important; border: 1px solid #dedfdc !important; border-radius: 16px !important; background: #fffdfa !important; box-shadow: 0 6px 20px #20374a08; min-width: min(340px, 100%) !important;}
+.metric-card {padding: 16px 18px !important; border: 1px solid #dedfdc !important; border-radius: 13px !important; background: #fffdfa !important; min-height: 106px;}
+.metric-card input {font-size: 28px !important; font-weight: 600 !important; color: #23394e !important;}
+#muan-interface .metric-card input {font-size: 28px !important;}
+.metric-card label span {font-size: 13px !important; color: #526777 !important;}
+.warning-note {margin: 0; padding: 15px 18px; border: 1px solid #d9e2e7; border-radius: 11px; background: #edf2f5; color: #486276; font-size: 14px; line-height: 1.7;}
+.warning-note strong {color: #23394e !important;}
+#muan-interface button.primary, #muan-interface button.secondary, #muan-interface button.stop {min-height: 44px !important; border-radius: 9px !important; font-size: 15px !important; font-weight: 500 !important;}
+#muan-interface button.primary {background: #253f57 !important; color: #ffffff !important; border-color: #253f57 !important;}
+#muan-interface button.primary:hover {background: #345770 !important;}
+#muan-interface button.secondary {background: #fffdfa !important; color: #304e67 !important; border: 1px solid #bdcbd6 !important;}
+#muan-interface button.stop {background: #b83732 !important; color: #ffffff !important; border-color: #b83732 !important;}
+#muan-interface button:focus-visible {outline: 3px solid #587e9b !important; outline-offset: 3px;}
+#muan-interface button:disabled {opacity: .5; cursor: default;}
+#muan-interface input, #muan-interface textarea, #muan-interface select {font-size: 16px !important; color: #23394e; border-radius: 8px !important;}
+#muan-interface input[type="range"] {accent-color: #426a87;}
+#muan-interface a {color: #376a8e;}
+#upload-video, #result-video, #camera-input, #camera-output {border: 1px solid #d6dfe6 !important; border-radius: 12px !important; overflow: hidden;}
+#events-table, #pre-fall-table {min-width: 0 !important; border-radius: 12px !important; background: #fffdfa; overflow: hidden;}
+#events-table table, #pre-fall-table table {font-size: 14px !important;}
+.history-pagination {align-items: center !important; gap: 12px !important; padding: 14px !important; border: 1px solid #dedfdc !important; border-radius: 12px !important; background: #fffdfa !important;}
+.history-page-info {text-align: center; color: #5f6f7c; font-size: 14px;}
+.history-page-info p {margin: 0 !important;}
+.history-hint {font-size: 12px; color: #5f6f7c;}
+#status-panel, #alert-panel, #event-detail, #pre-fall-summary, #pre-fall-summary-live {padding: 18px !important; border: 1px solid #dedfdc !important; border-radius: 12px !important; background: #fffdfa !important;}
+#event-stats {padding: 18px 22px; border-radius: 12px; background: #253f57;}
+#event-stats, #event-stats p, #event-stats strong, #event-stats span {color: #ffffff !important;}
+#muan-footer {margin-top: 40px; padding: 24px 12px; border-top: 1px solid #dedfdc; font-size: 12px; line-height: 1.8; color: #5f6f7c; text-align: center;}
+#muan-interface > footer, #muan-interface .footer {display: none !important;}
+@media (min-width: 761px) and (max-height: 640px) {
+  #muan-sidebar {padding-top: 18px;}
+  .workspace-navigation-label {margin-top: 18px;}
+  #workspace-tabs [role="tablist"] {top: 124px;}
+  .workspace-bottom p {display: none;}
+  .workspace-bottom {bottom: 12px; padding-top: 10px;}
+}
+@media (max-width: 1060px) and (min-width: 761px) {
+  #muan-interface {--muan-sidebar-width: 200px;}
+  .workspace-name {font-size: 20px; letter-spacing: 1px;}
+  #muan-sidebar {padding-inline: 14px;}
+}
+@media (max-width: 760px) {
+  #muan-interface[data-muan-view="workspace"] #app-shell {margin-left: 0 !important; width: 100% !important; padding: 0 16px 24px !important;}
+  #muan-workbar {margin: 0 -16px 22px; padding: 12px 16px; min-height: 64px;}
+  #muan-menu {display: flex;}
+  .workspace-breadcrumb {display: none;}
+  .workspace-platform {font-size: 11px;}
+  #muan-sidebar {display: none;}
+  #workspace-tabs [role="tablist"] {display: none !important;}
+  #workspace-tabs .tab-wrapper {height: auto !important;}
+  #muan-interface[data-muan-menu="open"] #muan-sidebar {display: block; position: relative; width: auto; padding: 20px; margin: 0 -16px; min-height: 156px;}
+  #muan-interface[data-muan-menu="open"] .workspace-navigation-label {display: none;}
+  #muan-interface[data-muan-menu="open"] .workspace-bottom {left: auto; right: 20px; top: 28px; bottom: auto; padding: 0; border: 0;}
+  #muan-interface[data-muan-menu="open"] .workspace-bottom p, #muan-interface[data-muan-menu="open"] .workspace-bottom small {display: none;}
+  #muan-interface[data-muan-menu="open"] #workspace-tabs [role="tablist"] {display: flex !important; position: relative !important; top: auto; left: auto; width: 100% !important; box-sizing: border-box; margin: 0 0 22px !important; padding: 12px !important; background: #1b3046 !important; border-radius: 12px;}
+  .muan-card {padding: 16px !important;}
+  .section-intro h2 {font-size: 27px;}
+  .section-intro p {font-size: 14px;}
+  .metric-card {min-width: min(180px, 100%) !important;}
+  .history-pagination {gap: 10px !important;}
+  #workspace-tabs .row > .form, #workspace-tabs .row > .block {min-width: min(220px, 100%) !important;}
+}
+/* Hierarchy: structural surfaces are quiet; only floating windows cast shadows. */
+#muan-interface {--ma-paper:#f7f5ef;--ma-surface:#fffdfa;--ma-ink:#1c3248;--ma-gold:#c8a36a;--ma-positive:#527866;--ma-alert:#b34e46;}
+#muan-sidebar {background:#1c3248;}
+.workspace-english {font-size:12px;letter-spacing:0;line-height:1.7;}
+#workspace-tabs [role="tablist"] button[aria-selected="true"], #workspace-tabs [role="tablist"] button[role="tab"].selected {background:#ffffff12!important;color:#f1d3a3!important;border-left:3px solid #c8a36a!important;}
+#workspace-tabs [role="tablist"] button[role="tab"]::before {content:"";display:block;flex:0 0 20px;height:20px;background:currentColor;opacity:1;mask-size:contain;mask-position:center;mask-repeat:no-repeat;}
+#video-tab-button::before {mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7'%3E%3Crect x='3' y='5' width='18' height='14' rx='3'/%3E%3Cpath d='m10 9 5 3-5 3Z'/%3E%3C/svg%3E");}
+#live-tab-button::before {mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7'%3E%3Crect x='2' y='5' width='14' height='14' rx='3'/%3E%3Cpath d='m16 10 6-3v10l-6-3'/%3E%3C/svg%3E");}
+#events-tab-button::before {mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7'%3E%3Cpath d='M7 3h10l3 3v15H4V3h3M8 8h8M8 12h8M8 16h5'/%3E%3C/svg%3E");}
+#risk-tab-button::before {mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7'%3E%3Cpath d='M3 3v18h18M6 15l4-5 4 3 6-8'/%3E%3C/svg%3E");}
+#muan-workbar {background:transparent;min-height:64px;margin-bottom:22px;}
+#muan-interface .muan-card {box-shadow:none;border-radius:12px!important;padding:22px!important;}
+#muan-interface .metric-card {box-shadow:none;border:0!important;border-left:2px solid #c8a36a!important;border-radius:0!important;background:transparent!important;min-height:92px;}
+#muan-interface .metric-card label {background:#fffdfa!important;box-shadow:none!important;}
+#muan-interface .metric-card input {background:transparent!important;border:0!important;box-shadow:none!important;}
+#event-export-file:has([aria-label="Empty value"]),#risk-export-file:has([aria-label="Empty value"]) {display:none!important;}
+#muan-interface .history-toolbar {align-items:center!important;}
+#muan-interface .history-toolbar > button {flex:0 0 150px!important;}
+#muan-interface button.primary,#muan-interface button.secondary {box-shadow:none!important;border-radius:8px!important;}
+#muan-interface button.stop {background:#b34e46!important;border-color:#b34e46!important;box-shadow:none!important;}
+#muan-interface .section-intro h2 {font-size:30px;letter-spacing:0;margin-bottom:6px;}
+#muan-interface .warning-note {border:0;border-left:3px solid #8ca6b7;border-radius:0;padding:12px 16px;font-size:14px;background:#edf1f2;}
+#video-controls {min-width:290px!important;}
+#video-stage {min-width:360px!important;position:relative;}
+#upload-video {height:230px!important;min-height:0!important;}
+#result-video {height:360px!important;min-height:0!important;}
+#video-empty-guide {padding:16px 4px!important;}
+#result-download:has([aria-label="Empty value"]) {display:none!important;}
+.video-empty-guide strong {font-weight:600;font-size:16px;color:#1c3248;}
+.video-empty-guide p {font-size:14px;color:#5f6f7c;margin:6px 0 0;}
+#video-stage[data-has-result="true"] #video-empty-guide {display:none!important;}
+#video-metrics {padding:16px 0!important;border-top:1px solid #dedfdc;border-bottom:1px solid #dedfdc;}
+#video-metrics[data-waiting="true"] .metric-card input {color:transparent!important;}
+#video-metrics[data-waiting="true"] .metric-card {position:relative;}
+#video-metrics[data-waiting="true"] .metric-card::after {content:"等待检测";position:absolute;bottom:19px;left:18px;font-size:17px;color:#5f6f7c;pointer-events:none;}
+#event-stats {background:#ecf1f2;border-left:3px solid #527866;border-radius:0;padding:16px 20px;}
+#event-stats,#event-stats p,#event-stats strong,#event-stats span {color:#1c3248!important;}
+#events-table,#pre-fall-table {border-radius:8px!important;}
+#events-table td,#pre-fall-table td {padding-top:14px!important;padding-bottom:14px!important;}
+#events-table tr[aria-selected="true"],#pre-fall-table tr[aria-selected="true"] {background:#edf2f4!important;}
+.history-pagination {background:transparent!important;border:0!important;border-bottom:1px solid #dedfdc!important;border-radius:0!important;padding:10px 0!important;}
+#status-panel,#alert-panel,#event-detail,#pre-fall-summary,#pre-fall-summary-live {box-shadow:none;border-radius:8px;}
+#muan-footer {text-align:left;padding:20px 0;}
+@media(max-width:1000px) {#video-workspace {flex-direction:column!important;} #video-controls,#video-stage {min-width:0!important;width:100%!important;}}
+@media(max-width:760px) {#muan-interface .muan-card {padding:16px!important;} #upload-video {height:220px!important;} #result-video {height:240px!important;} #video-metrics {gap:16px!important;} #video-metrics .metric-card {min-width:calc(50% - 16px)!important;}}
+

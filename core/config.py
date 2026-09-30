@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from camera_capture.processing import ProcessingConfig
+from core.spatial import SpatialConfig
 
 
 @dataclass(slots=True)
@@ -48,7 +50,7 @@ class VideoConfig:
 
 
 @dataclass(slots=True)
-class MultimodalConfig:
+class MultimodalConfig(ProcessingConfig):
     enabled: bool = True
     depth_side: str = "left"
     split_ratio: float = 0.5
@@ -177,6 +179,13 @@ class ServerConfig:
 
 
 @dataclass(slots=True)
+class AstraConfig:
+    sdk_dir: str = ''
+    result_max_age_s: float = 2.0
+    page_timeout_s: float = 30.0
+
+
+@dataclass(slots=True)
 class AppConfig:
     project_root: Path
     model: ModelConfig = field(default_factory=ModelConfig)
@@ -186,6 +195,8 @@ class AppConfig:
     pre_fall: PreFallConfig = field(default_factory=PreFallConfig)
     storage: StorageConfig = field(default_factory=StorageConfig)
     server: ServerConfig = field(default_factory=ServerConfig)
+    astra: AstraConfig = field(default_factory=AstraConfig)
+    spatial: SpatialConfig = field(default_factory=SpatialConfig)
 
     def resolve(self, relative_or_absolute: str) -> Path:
         path = Path(relative_or_absolute)
@@ -218,7 +229,7 @@ def load_config(path: str | Path | None = None) -> AppConfig:
             raw = yaml.safe_load(handle) or {}
 
     config = AppConfig(project_root=project_root)
-    for section in ("model", "detection", "video", "multimodal", "pre_fall", "storage", "server"):
+    for section in ("model", "detection", "video", "multimodal", "pre_fall", "storage", "server", "astra", "spatial"):
         values = raw.get(section, {})
         if isinstance(values, dict):
             _apply_values(getattr(config, section), values)
